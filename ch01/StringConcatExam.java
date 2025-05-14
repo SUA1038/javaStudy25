@@ -4,7 +4,7 @@ public class StringConcatExam {
 
 	public static void main(String[] args) {
 		String A1 = "JAVA" + 6.0 ;
-		String A2 = A1 + "Áö¿Á" ;
+		String A2 = A1 + "íŠ¹ì§•" ;
 		System.out.println(A1);
 		System.out.println(A2);
 		System.out.println("====================");

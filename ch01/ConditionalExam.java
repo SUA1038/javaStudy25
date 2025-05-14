@@ -3,21 +3,16 @@ package ch01;
 public class ConditionalExam {
 
 	public static void main(String[] args) {
-		// »ïÇ×¿¬»êÀÚ, score°¡ 90 ÀÌ»óÀÌ¸é A µî±Ş, 80 ÀÌ»óÀÌ¸é Bµî±Ş, ³ª¸ÓÁö´Â Cµî±ŞÀ¸·Î ÆÇ´ÜÇÏ½Ã¿À.
 		int score = 85 ;
 		char grade = (score>90) ? 'A' : ( (score>80) ? 'B' : 'C' ) ;
-		System.out.println(score + "Á¡Àº " + grade + " µî±ŞÀÔ´Ï´Ù.");
+		System.out.println(score + "ì ì€" + grade + " ë“±ê¸‰ì…ë‹ˆë‹¤.");
 
 		
 		
 		int score1 = 70 ;
 		char grade1 = (score1>90) ? 'A' : ( (score1>80) ? 'B' : ( ( score1>70) ? 'C' : 'D' ) ) ;
-		System.out.println(score1 + "Á¡Àº " + grade1 + " µî±ŞÀÔ´Ï´Ù.");
+		System.out.println(score1 + "ì ì€ " + grade1 + " ë“±ê¸‰ì…ë‹ˆë‹¤.");
 		
-		int X = 10 ;
-		String Y = (X>15) ? "Âü" : ( (X>5) ? "¾à°£ °ÅÁş" : "ÁøÂ¥ °ÅÁş") ;
-		
-		System.out.println(Y + " ÀÔ´Ï´Ù.");
 		
 		
 		

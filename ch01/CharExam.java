@@ -5,9 +5,9 @@ public class CharExam {
 	public static void main(String[] args) {
 
 		
-		char c1 = 75 ;		// A¹®ÀÚ¸¦ Ãâ·ÂÇÏ±â À§ÇØ char¿¡ ´ëÀÔ
-		char c2 = 105 ;		// 10Áø¼ö 65¸¦ char¿¡ ´ëÀÔÇÏ¿© À¯´ÏÄÚµå
-		char c3 = 109 ;		// u¶ó´Â À¯´ÏÄÚµåÇ¥¿¡ ÀÖ´Â 16Áø¼ö 41À» Ãâ·Â
+		char c1 = 75 ;		// Aë¬¸ìë¥¼ ì¶œë ¥í•˜ê¸° ìœ„í•´ charì— ëŒ€ì…
+		char c2 = 105 ;		// 10ì§„ìˆ˜ 65ë¥¼ charì— ëŒ€ì…í•˜ì—¬ ìœ ë‹ˆì½”ë“œ
+		char c3 = 109 ;		// uë¼ëŠ” ìœ ë‹ˆì½”ë“œ í‘œì— ìˆëŠ” 16ì§„ìˆ˜ 41ì„ ì¶œë ¥
 		
 		
 		//char c4 = 75 ;
@@ -20,9 +20,9 @@ public class CharExam {
 		
 		System.out.print(c1);
 		System.out.print(c2);
-		System.out.println(c3); //ÁÙ º¯°æ
+		System.out.println(c3); 
 		
-		char han1 = '°¡' ;
+		char han1 = 'ê°€' ;
 		char han2 = 44032 ;
 		char han3 = '\uac00' ;
 		
@@ -30,15 +30,15 @@ public class CharExam {
 		System.out.println(han2);
 		System.out.println(han3);
 		
-		int uniCode1 = '±è' ;
-		int uniCode2 = '±â' ;
-		int uniCode3 = '¿ø' ;
+		int uniCode1 = 'ê¹€' ;
+		int uniCode2 = 'ê¸°' ;
+		int uniCode3 = 'ì›' ;
 		
 		System.out.println(uniCode1);
 		System.out.println(uniCode2);
 		System.out.println(uniCode3);
 
-	}
+	} // main ë©”ì„œë“œ ì¢…ë£Œ
 
-}
+} // í´ë˜ìŠ¤ ì¢…ë£Œ
  

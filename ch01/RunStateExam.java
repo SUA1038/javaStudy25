@@ -4,13 +4,13 @@ public class RunStateExam {
 
 	public static void main(String[] args) {
 		
-		int x = 1 ; // Á¤¼öÅ¸ÀÔ x º¯¼ö¿¡ 1À» ³Ö´Â´Ù.
-		int y = 2 ; // Á¤¼öÅ¸ÀÔ y º¯¼ö¿¡ 2¸¦ ³Ö´Â´Ù.
+		int x = 1 ; // x ë³€ìˆ˜ì— ìˆ«ì 1ì„ ë„£ëŠ”ë‹¤.
+		int y = 2 ; // y ë³€ìˆ˜ì— ìˆ«ì 2ë¥¼ ë„£ëŠ”ë‹¤.
 		int result = x + y ; 
-		// Á¤¼öÅ¸ÀÔ result º¯¼ö¿¡ x º¯¼ö¿Í y º¯¼ö¸¦ ´õÇÑ °ªÀ» ³Ö´Â´Ù.
+		// result ë³€ìˆ˜ì— x + y ê°’ì„ ë„£ëŠ”ë‹¤.
 		
 		System.out.println("x + y = " + result);
 		
-	} // main ¸Ş¼­µå Á¾·á
+	} // main ë©”ì„œë“œ ì¢…ë£Œ
 	
-} // Å¬·¡½º Á¾·á
+} // í´ë˜ìŠ¤ ì¢…ë£Œ

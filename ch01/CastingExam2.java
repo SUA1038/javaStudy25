@@ -3,21 +3,21 @@ package ch01;
 public class CastingExam2 {
 
 	public static void main(String[] args) {
-		// °­Á¦Å¸ÀÔº¯È¯ Å×½ºÆ®
+
 		
 		int intValue = 1350 ;
-		byte byteValue = (byte) intValue ; // int (4byte) -> byte(1byte)·Î °­Á¦Å¸ÀÔº¯È¯
+		byte byteValue = (byte) intValue ; // int (4byte) -> byte(1byte) ê°•ì œíƒ€ì…ë³€í™˜
 		
 		System.out.println(intValue);
 		System.out.println(byteValue);
 		
 		intValue = 248395 ;
-		char charValue = (char) intValue ; // int(4byte) -> char(2byte) °­Á¦Å¸ÀÔº¯È¯
+		char charValue = (char) intValue ; // int(4byte) -> char(2byte) ê°•ì œíƒ€ì…ë³€í™˜
 		System.out.println(charValue);
 		
 		double doubleValue = 9.3214 ;
 		intValue = (int)doubleValue ; //double(8) -> int(4)
-		System.out.println(intValue); // ¼Ò¼öÁ¡ÀÌ ¹ö·ÁÁø´Ù.
+		System.out.println(intValue); // ê°•ì œíƒ€ì…ë³€í™˜
 		
 		byte bT1 = 20 ;
 		byte bT2 = 50 ;
@@ -28,8 +28,8 @@ public class CastingExam2 {
 		char cH1 = 'G';
 		char cH2 = 4 ;
 		int iT2 = cH1 + cH2 ;
-		System.out.println("À¯´ÏÄÚµå = " + iT1);
-		System.out.println("Ãâ·Â¹®ÀÚ = " + iT2);
+		System.out.println("Gì˜ ìœ ë‹ˆì½”ë“œ ê°’ = " + iT1);
+		System.out.println("4ì˜ ìœ ë‹ˆì½”ë“œ ê°’ = " + iT2);
 		
 				
 

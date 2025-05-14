@@ -5,10 +5,10 @@ public class FloatDoubleExam {
 	public static void main(String[] args) {
 
 		double var1 = 3.14;
-		// float var2 = 3.14 ; float Å¸ÀÔ¿¡´Â F¸¦ ºÙ¿©¾ß ÇÑ´Ù.
+		// float var2 = 3.14 ; float íƒ€ì…ì—ëŠ” Fë¥¼ ë¶™ì—¬ì•¼í•œë‹¤.
 		float var3 = 3.14F ;
 		
-		// Á¤¹Ğµµ Å×½ºÆ®
+		// ì •ë°€ë„ í…ŒìŠ¤íŠ¸
 		double var4 = 0.123456789123456789 ;
 		float var5 = 0.123456789123456789F ;
 		
@@ -17,8 +17,6 @@ public class FloatDoubleExam {
 		System.out.println(var4);
 		System.out.println(var5);
 		
-		// doubleÀÌ °¡Àå È®½ÇÇÔ
-
 	}
 
 }

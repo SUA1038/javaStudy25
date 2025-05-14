@@ -5,13 +5,13 @@ public class Variable {
 	public static void main(String[] args) {
 		int v1 = 20 ;
 		int v2 = 0 ;
-		if(v1>10) { // ifºñ±³¹®À¸·Î true¿Í false¸¦ ÆÇ´Ü
+		if(v1>10) { // if ë¹„êµë¬¸ìœ¼ë¡œ trueì™€ falseë¥¼ íŒë‹¨
 			v2 = v1 + 10 ;			
 		}
 		int v3 = v1 + v2 + 5 ;
-		System.out.println("v1ÀÇ °ª : " + v1);
-		System.out.println("v2ÀÇ °ª : " + v2);
-		System.out.println("v3ÀÇ °ª : " + v3);
+		System.out.println("v1ì˜ ê°’ : " + v1);
+		System.out.println("v2ì˜ ê°’ : " + v2);
+		System.out.println("v3ì˜ ê°’ : " + v3);
 		
 	}
 

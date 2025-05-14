@@ -5,17 +5,17 @@ public class AccuracyExan1 {
 	public static void main(String[] args) {
 	
 		int apple = 1 ;
-		int totalPieces = apple * 10 ; // Á¤¼ö·Î °è»êÇÏ±â À§ÇØ *10
+		int totalPieces = apple * 10 ; // ì •ìˆ˜ë¡œ ê³„ì‚°í•˜ê¸° ìœ„í•´ *10
 		int number = 7 ;
-		int temp = totalPieces - number ; // 10 - 7 = 3 Á¶°¢
+		int temp = totalPieces - number ; // 10 - 7 = 3 ì¡°ê°
 		
 		//double result = apple - number * pieceUnit ;
-		double result = temp / 10.0 ; // 3Á¶°¢À» ¼Ò¼öÁ¡À¸·Î Ç¥Çö -> ³ª´©±â 10.0
+		double result = temp / 10.0 ; // 3ì¡°ê°ì„ ì†Œìˆ˜ì ìœ¼ë¡œ í‘œí˜„ -> ë‚˜ëˆ„ê¸° 10.0
 		//System.out.println(number*pieceUnit);
 		
-		System.out.println("»ç°ú ÇÑ°³¿¡¼­");
-		System.out.println("0.7 Á¶°¢À» »©¸é");
-		System.out.println(result + " Á¶°¢ÀÌ ³²´Â´Ù.");
+		System.out.println("ì‚¬ê³¼ í•œ ê°œì—ì„œ ");
+		System.out.println("0.7 ì¡°ê°ì„ ë¹¼ë©´");
+		System.out.println(result + " ì¡°ê°ì´ ë‚¨ëŠ”ë‹¤.");
 		
 	}
 

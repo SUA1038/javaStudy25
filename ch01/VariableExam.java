@@ -3,59 +3,51 @@ package ch01;
 public class VariableExam {
 
 	public static void main(String[] args) {
-		
-		int mach ; // Á¤¼ö Å¸ÀÔÀÇ º¯¼ö mach ¼±¾ğ
-		int distance ; // Á¤¼ö Å¸ÀÔÀÇ º¯¼ö distance ¼±¾ğ
-		mach = 340 ;
-		distance = mach * 60 * 60 ;
-		
-		System.out.println("¼Ò¸®°¡ 1½Ã°£ µ¿¾È °¡´Â °Å¸® : " + distance + "m");
-		
-		double radius ; // ½Ç¼ö Å¸ÀÔÀÇ º¯¼ö radius ¼±¾ğ
-		double area ; // ½Ç¼ö Å¸ÀÔÀÇ º¯¼ö area ¼±¾ğ
-		radius = 10 ; // ½Ç¼ö °ªÀ» ÀÔ·Â
-		area = radius * radius * 3.14 ; // ¿øÀÇ ³ĞÀÌ °è»ê
-		
-		System.out.print("¹İÁö¸§ÀÌ " + radius + " ÀÎ");
-		System.out.println(" ¿øÀÇ ³ĞÀÌ " + area);
-		
-		char firstName ; // ¹®ÀÚÅ¸ÀÔÀÇ firstName º¯¼ö ¼±¾ğ
-		char midName ;
-		char lastName ;
-		
-		firstName = '±è' ; // firstName ¿¡ ¹®ÀÚ ÀÔ·Â
-		midName = '±â' ;
-		lastName = '¿ø' ;
-		
-		char firstname ; // ¹®ÀÚÅ¸ÀÔÀÇ firstname º¯¼ö ¼±¾ğ
-		char midname ;
-		char lastname ;
-		
-		
-		firstname = '±è' ; // firstname ¿¡ ¹®ÀÚ ÀÔ·Â
-		midname = '¼ö' ; 
-		lastname = '¾Æ' ;
-		
+
+		int mach; // ì •ìˆ˜ íƒ€ì…ì˜ mach ë³€ìˆ˜ ì„ ì–¸
+		int distance; // ì •ìˆ˜ íƒ€ì…ì˜ distance ë³€ìˆ˜ ì„ ì–¸
+		mach = 340;
+		distance = mach * 60 * 60;
+
+		System.out.println("ì†Œë¦¬ê°€ 1ì‹œê°„ ë™ì•ˆ ê°€ëŠ” ê±°ë¦¬ : " + distance + "m");
+
+		double radius; // ì‹¤ìˆ˜ íƒ€ì…ì˜ radius ì„ ì–¸
+		double area; // ì‹¤ìˆ˜ íƒ€ì…ì˜ area ì„ ì–¸
+		radius = 10; // ì‹¤ìˆ˜ ê°’ì„ ì…ë ¥
+		area = radius * radius * 3.14; // ì›ì˜ ë„“ì´ ê³„ì‚°
+
+		System.out.print("ë°˜ì§€ë¦„ì´ " + radius + " ì¸ ì›ì˜ ë„“ì´" + area);
+
+		char firstName; // ë¬¸ìíƒ€ì…ì˜ firstName ë³€ìˆ˜ ìƒì„±
+		char midName;
+		char lastName;
+
+		firstName = 'ê¹€'; // firstNameì— ë¬¸ì ì…ë ¥
+		midName = 'ê¸°';
+		lastName = 'ì›';
+
+		char firstname;
+		char midname;
+		char lastname;
+
+		firstname = 'ì´';
+		midname = 'ì„±';
+		lastname = 'ê³„';
+
 		System.out.print(firstName);
 		System.out.print(midName);
 		System.out.println(lastName);
-		
+
 		System.out.print(firstname);
 		System.out.print(midname);
 		System.out.println(lastname);
-		
-		
-		System.out.println("³ªÀÇ ÀÌ¸§Àº " + firstName + midName + lastName + " ÀÔ´Ï´Ù." );
-		System.out.println("³ªÀÇ ÀÌ¸§Àº " + firstname + midname + lastname + " ÀÔ´Ï´Ù.");
-		
-		System.out.println("³ªÀÇ ÀÌ¸§Àº " + firstName + midname + lastName + " ÀÔ´Ï´Ù.");
-		System.out.println("³ªÀÇ ÀÌ¸§Àº " +firstname + midName + lastname + " ÀÔ´Ï´Ù.");
-		
-		
-		
-				
-		
-		
-	}
-	
-}
+
+		System.out.println("ì œ ì´ë¦„ì€ " + firstName + midName + lastName + "ì…ë‹ˆë‹¤.");
+		System.out.println("ì œ ì´ë¦„ì€ " + firstname + midname + lastname + "ì…ë‹ˆë‹¤.");
+
+		System.out.println("ì œ ì´ë¦„ì€ " + firstName + midname + lastName + "ì…ë‹ˆë‹¤.");
+		System.out.println("ì œ ì´ë¦„ì€ " + firstname + midName + lastname + "ì…ë‹ˆë‹¤.");
+
+	} // main ë©”ì„œë“œ ì¢…ë£Œ
+
+} // í´ë˜ìŠ¤ ì¢…ë£Œ

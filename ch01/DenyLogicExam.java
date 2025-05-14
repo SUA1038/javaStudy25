@@ -1,10 +1,9 @@
 package ch01;
 
 public class DenyLogicExam {
-// ³í¸® ºÎÁ¤ ¿¬»êÀÚ (!)
 	
 	public static void main(String[] args) {
-		boolean play = true ; //Âü°ªÀ» »ğÀÔ
+		boolean play = true ; //ì°¸ê°’ì„ ì…ë ¥
 		System.out.println(play);
 		
 		play = !play ;

@@ -3,27 +3,24 @@ package ch01;
 public class ByteExam2 {
 
 	public static void main(String[] args) {
-		// ÀÚµ¿Å¸ÀÔº¯È¯ Å×½ºÆ®
 		
 		byte byteValue = 35 ;
-		int intValue = byteValue ; // ÀÚµ¿Å¸ÀÔº¯È¯
+		int intValue = byteValue ; // ìë™íƒ€ì…ë³€í™˜
 		System.out.println(intValue); 
-		// byte byteValue = intValue ; Å«Å¸ÀÔ¿¡¼­ ÀÛÀº Å¸ÀÔÀº ¿À·ù³­´Ù.
+		// byte byteValue = intValue ; í°íƒ€ì…ì—ì„œ ì‘ì€ íƒ€ì…ì€ ì˜¤ë¥˜
 		
-		char charValue = '±è';
+		char charValue = 'ê°€';
 		intValue = charValue ;
-		System.out.println("±èÀÇ À¯´ÏÄÚµå °ª : " + intValue);
+		System.out.println("ê°€ì˜ ìœ ë‹ˆì½”ë“œ ê°’ : " + intValue);
 		
 		intValue = 1000 ;
-		long longValue = intValue ; // int(4)¸¦ Å«Å¸ÀÔÀÎ long(8)À¸·Î º¯È¯
+		long longValue = intValue ; // int(4)ë¥¼ í°íƒ€ì…ì¸ long(8)ë¡œ ë³€í™˜
 		System.out.println(longValue);
 		
 		intValue = 1500 ;
-		double doubleValue = intValue ; // int(4)¸¦ Å«Å¸ÀÔÀÎ double(8)·Î º¯È¯
+		double doubleValue = intValue ; // int(4)ë¥¼ í°íƒ€ì…ì¸ long(8)ë¡œ ë³€í™˜
 		System.out.println(doubleValue);
 		
-		// ÀÛÀº Å¸ÀÔ¿¡¼­ Å« Å¸ÀÔÀ¸·Î ¹Ù²Ù´Â °ÍÀº ¿À·ù°¡ ¹ß»ıÇÏÁö ¾Ê´Â´Ù.
-
 		
 		int v1 = 40 ;
 		int v2 = 60 ;

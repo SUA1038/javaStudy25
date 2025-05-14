@@ -3,7 +3,6 @@ package ch01;
 public class CastingExam {
 
 	public static void main(String[] args) {
-		//°­Á¦Å¸ÀÔº¯È¯
 		
 		int intvalue = 103029770;
 		byte bytevalue = (byte) intvalue ;
@@ -14,7 +13,7 @@ public class CastingExam {
 		
 		
 		int intValue = 100 ;
-		byte byteValue = (byte) intValue ; // int(4byte) -> byte(11byte) °­Á¦Å¸ÀÔº¯È¯
+		byte byteValue = (byte) intValue ; // int(4byte) -> byte(11byte) ê°•ì œíƒ€ì…ë³€í™˜
 		
 		System.out.println(intValue);
 		System.out.println(byteValue);
@@ -22,29 +21,29 @@ public class CastingExam {
 		
 		
 		intValue = 44032;
-		char charValue = (char) intValue ; // int(4byte) -> char(2byte) °­Á¦Å¸ÀÔº¯È¯
+		char charValue = (char) intValue ; // int(4byte) -> char(2byte) ê°•ì œíƒ€ì…ë³€í™˜
 		
 		System.out.println(charValue);
 		
 		
 		
 		double doubleValue = 3.14 ;
-		intValue = (int) doubleValue ; // double(8byte) -> int(4byte) °­Á¦Å¸ÀÔº¯È¯
+		intValue = (int) doubleValue ; // double(8byte) -> int(4byte) ê°•ì œíƒ€ì…ë³€í™˜
 		System.out.println(intValue);
 		
 		
 		int i = 128 ;
 		
-		if ( (i<Byte.MIN_VALUE)||(i>Byte.MAX_VALUE) ) {
-			//iÀÇ °ªÀÌ ByteÀÇ ÃÖ¼Ò°ªº¸´Ù ÀÛ°Å³ª ÃÖ´ë°ªº¸´Ù Å©¸é
-			System.out.println("byteÅ¸ÀÔÀ¸·Î º¯È¯ÇÒ ¼ö ¾ø½À´Ï´Ù.");
-			System.out.println(Byte.MIN_VALUE + "°ªº¸´Ù ÀÛ°Å³ª");
-			System.out.println(Byte.MAX_VALUE + "°ªº¸´Ù Å®´Ï´Ù.");
+		if ( (i<Byte.MIN_VALUE)||(i>Byte.MAX_VALUE) ) { // ifë¬¸ ì‹œì‘
+			//iì˜ ê°’ì´ Byteì˜ ìµœì†Œê°’ë³´ë‹¤ ì‘ê±°ë‚˜ ìµœëŒ€ê°’ë³´ë‹¤ í¬ë©´
+			System.out.println("byte íƒ€ì…ìœ¼ë¡œ ë³€í™˜í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+			System.out.println(Byte.MIN_VALUE + "ê°’ë³´ë‹¤ ì‘ê±°ë‚˜");
+			System.out.println(Byte.MAX_VALUE + "ê°’ë³´ë‹¤ í½ë‹ˆë‹¤.");
 		} else {
-		byte b = (byte) i ; // int¸¦  byte·Î °­Á¦Å¸ÀÔº¯È¯
+		byte b = (byte) i ; // intë¥¼ byteë¡œ ê°•ì œíƒ€ì…ë³€í™˜
 		System.out.println(b);
-		}
+		} // ifë¬¸ ì¢…ë£Œ
 		
-	}
+	} // main ë©”ì„œë“œ ì¢…ë£Œ
 
-}
+} // í´ë˜ìŠ¤ ì¢…ë£Œ

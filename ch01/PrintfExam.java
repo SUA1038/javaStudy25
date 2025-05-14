@@ -27,16 +27,16 @@ public class PrintfExam {
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("=============================");
-		System.out.print("ÀÌ¸§ : ");
-		String name = input.next(); // ¹®ÀÚ¿­ ÀÔ·Â¿ë
+		System.out.print("ì´ë¦„ : ");
+		String name = input.next(); // ë¬¸ìì—´ ì…ë ¥ìš©
 		
-		System.out.print("³ªÀÌ : "); // Á¤¼ö ÀÔ·Â¿ë
-		String age = input.next(); 
+		System.out.print("ë‚˜ì´ : "); // ì •ìˆ˜ ì…ë ¥ìš©
+		int age = input.nextInt(); 
 		
-		System.out.print("Æò±Õ : "); //½Ç¼ö ÀÔ·Â¿ë
-		String ave = input.next();
+		System.out.print("í‰ê·  : "); // ì‹¤ìˆ˜ ì…ë ¥ìš©
+		double ave = input.nextDouble();
 		
-		System.out.printf("ÇöÀç ´ç½ÅÀÇ ÀÌ¸§Àº %S\n ´ç½ÅÀÇ ³ªÀÌ´Â %d\n Æò±ÕÀº %5.2f\nÀÔ´Ï´Ù.", name, age, ave);
+		System.out.printf("í˜„ì¬ ë‹¹ì‹ ì˜ ì´ë¦„ì€ %S\n ë‹¹ì‹ ì˜ ë‚˜ì´ëŠ” %d\n í‰ê· ì€ %5.2f\n ì…ë‹ˆë‹¤.", name, age, ave);
 
 	}
 

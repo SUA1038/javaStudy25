@@ -3,9 +3,9 @@ package ch01;
 public class StringEqualExam {
 
 	public static void main(String[] args) {
-		String st1 = "�����" ;
-		String st2 = "�����" ;
-		String st3 = new String("�����") ;
+		String st1 = "김수아" ; // 김수아라는 string 객체 생성
+		String st2 = "김수아" ; // 같은 객체가 있어서 새로 생성하지 않음
+		String st3 = new String("김수아") ; // 새로운 객체를 생성
 		
 		System.out.println(st1 == st2);
 		System.out.println(st1 == st3);

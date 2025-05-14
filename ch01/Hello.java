@@ -1,22 +1,19 @@
 package ch01;
 
-/*
-¹üÀ§ µå·¡±× ÈÄ ctrl + / -> ÇØ´ç ¹üÀ§¸¸Å­ ÁÖ¼® Ãß°¡ °¡´É
-ctrl + / ÁÖ¼® (//) ´ÜÃàÅ°
-
-ÀÛ¼ºÀÚ: ±è¼ö¾Æ
-ÀÛ¼º³¯: 2025.05.02 (±Ý¿äÀÏÀÌÀÚ ³ªÀÇ ½Ç¾÷ÀÎÁõÀÏ...)
-¿Ü¿ï °Í: ´ÜÃàÅ°, ±×¸®°í ÁÖ¼®À» ²Ä²ÄÇÏ°Ô ÀÛ¼ºÇÏ´Â ½À°ü µéÀÏ °Í
-*/
-
 public class Hello {
+/*
+ ì»¨íŠ¸ë¡¤ + ì‰¬í”„íŠ¸ + / ë‹¨ì¶•í‚¤ë¡œ ë¼ì¸ ì£¼ì„ì„ ë§Œë“¤ ìˆ˜ ìžˆë‹¤.
+ 
+ ìž‘ì„±ìž : ê¹€ìˆ˜ì•„
+ ìž‘ì„±ì¼: 2025.5.1
+ ìž‘ì„±íšŒì‚¬: MBC ì•„ì¹´ë°ë¯¸
 
-	public static void main(String[] args) {
-		// ¹«Á¶°Ç ÀÖ¾î¾ß ÇÏ´Â main ¸Þ¼­µå
+ */
+	
+	public static void main(String[] args) { // Hello í´ëž˜ìŠ¤ë¡œ ì£¼ì„ì„ ì—°ìŠµí•˜ëŠ” ì¤‘ìž…ë‹ˆë‹¤.
 		
-		System.out.println("¾È³çÇÏ¼¼¿ä ÀÚ¹Ù Áö¿Á¿¡ ¿À½Å°É È¯¿µÇÕ´Ï´Ù.");
-		// ÄÜ¼Ö¿¡ ÅØ½ºÆ® ¶ç¿ì±â
+		System.out.println("ì•ˆë…•í•˜ì„¸ìš”, ìžë°” ì„¸ìƒì— ì˜¤ì‹  ê²ƒì„ í™˜ì˜í•©ë‹ˆë‹¤.");
 	
-	} // main ¸Þ¼­µå Á¾·á 
+	} // main ë©”ì„œë“œ ì¢…ë£Œ
 	
-} // Hello Å¬·¡½º Á¾·á
+} // Hello í´ëž˜ìŠ¤ ì¢…ë£Œ

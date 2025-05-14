@@ -6,12 +6,12 @@ public class OverFlowExam {
 		int x = 100000 ;
 		int y = 100000 ;
 		int z = x * y ;
-		System.out.println(z); // Á¦´ë·Î Ç¥±â ¾ÈµÊ
+		System.out.println(z); 
 		
 		long a = 1000000 ;
 		long b = 1000000 ;
 		long c = a * b ;
-		System.out.println(c); // Ç¥±âµÊ
+		System.out.println(c); 
 
 
 	}

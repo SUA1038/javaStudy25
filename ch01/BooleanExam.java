@@ -6,29 +6,29 @@ public class BooleanExam {
 		boolean stop = false ;
 		
 		if(stop) { 
-			System.out.println("ÁßÁöÇÕ´Ï´Ù.");
-		} // if ´Ý±â
+			System.out.println("ì¤‘ì§€í•©ë‹ˆë‹¤.");
+		} 
 		else {
-			System.out.println("Ãâ¹ßÇÕ´Ï´Ù.");
+			System.out.println("ì¶œë°œí•©ë‹ˆë‹¤.");
 			
 		
 		boolean start = true ;
 		
 		if(start) {
-			System.out.println("´Þ¸®½Ã¿À.");
+			System.out.println("ë‹¬ë¦½ë‹ˆë‹¤.");
 		}
 		else {
-			System.out.println("¸ØÃß½Ã¿À.");
+			System.out.println("ë©ˆì¶¥ë‹ˆë‹¤.");
 		}
 		
 		}
 
 		boolean NAGA = false ;
 		if(NAGA) {
-			System.out.println("ÂÑ°Ü³µ´Ù.");
+			System.out.println("ì«“ê²¨ë‚©ë‹ˆë‹¤.");
 		}
 		else {
-			System.out.println("¹öÅá´Ù.");
+			System.out.println("ë²„í…¼ìŠµë‹ˆë‹¤.");
 		}
 		
 	}

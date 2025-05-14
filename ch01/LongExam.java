@@ -5,15 +5,15 @@ public class LongExam {
 	public static void main(String[] args) {
 		long var1 = 10 ;
 		long var2 = 20L ;
-		// long var3 = 1000000000000000; LÀ» ºÙ¿©¾ß Ã³¸®°¡ µÈ´Ù.
+		// long var3 = 1000000000000000; Lì„ ë¶™ì—¬ì•¼ ì²˜ë¦¬ê°€ ëœë‹¤.
 		long var4 = 100000000000000000L ;
 		
 		System.out.println(var1);
 		System.out.println(var2);
 		System.out.println(var4);
 		
-		// Long Å¸ÀÔÀº º¯¼ö¸¦ ÃÊ±âÈ­ÇÒ ¶§ Á¤¼ö°ª µÚ¿¡ l È¤Àº LÀ» ºÙÀÎ´Ù.
-		// °¡±ŞÀû ´ë¹®ÀÚ LÀ» »ç¿ëÇÏ´Â °ÍÀÌ ÁÁ´Ù.
+		// Long íƒ€ì…ì€ ë³€ìˆ˜ë¥¼ ì´ˆê¸°í™”í•  ë•Œ ì •ìˆ˜ê°’ ë’¤ì— ì†Œë¬¸ì l, ëŒ€ë¬¸ì Lì„ ë¶™ì¸ë‹¤.
+		// ì¼ë°˜ì ìœ¼ë¡œ ëŒ€ë¬¸ì Lì„ ë” ë§ì´ ì‚¬ìš©í•œë‹¤.
 		
 
 	}

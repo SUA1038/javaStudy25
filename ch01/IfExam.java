@@ -5,40 +5,35 @@ import java.util.Scanner;
 public class IfExam {
 
 	public static void main(String[] args) {
-		// ´ÙÁß if¹®
+		// ï¿½ï¿½ï¿½ï¿½ ifï¿½ï¿½
 		
 		Scanner in = new Scanner (System.in);
-		// Sacnner °´Ã¼¸¦ »ı¼ºÇÏ¿© Å°º¸µå·Î °ªÀ» ÀÔ·Â¹Ş´Â´Ù.
-		System.out.println("±ÍÇÏÀÇ ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+		// Sacnnerë¥¼ ìƒì„±í•˜ì—¬ ê°ì²´ ì…ë ¥ë°›ê¸°
+		System.out.println("ì´ë¦„ì„ ì‘ì„±í•´ì£¼ì„¸ìš”.");
 		System.out.print(": ");
 		String name = in.nextLine();
-		System.out.println("±ÍÇÏÀÇ ÇĞ³âÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+		System.out.println("ë‚˜ì´ë¥¼ ì‘ì„±í•´ì£¼ì„¸ìš”.");
 		System.out.print(": ");
 		int age = in.nextInt();
-		System.out.println("±ÍÇÏÀÇ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ");
+		System.out.println("ì ìˆ˜ë¥¼ ì‘ì„±í•´ì£¼ì„¸ìš”. ");
 		System.out.print(": ");
 		int score = in.nextInt();
-		// Å°º¸µå·Î ÀÔ·Â¹ŞÀº Á¤¼ö¸¦ score º¯¼ö¿¡ ³Ö´Â´Ù.
 		
-		
-	
-		
-		
+		System.out.println("ë“±ê¸‰ì„ ì•ˆë‚´í•©ë‹ˆë‹¤.");
 		if (score >= 98) { 
-			System.out.println("Á¡¼ö°¡ 98Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-			System.out.println(age + "ÇĞ³â " + name + "´ÔÀÇ µî±ŞÀº 1µî±Ş ÀÔ´Ï´Ù.");			
+			System.out.println(age + "ì„¸" + name + "ë‹˜ì€ 1ë“±ê¸‰ì…ë‹ˆë‹¤.");			
 		} else if (score >= 92) {
-			System.out.println("Á¡¼ö°¡ 92Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-			System.out.println(age + "ÇĞ³â " + name + "´ÔÀÇ µî±ŞÀº 2µî±Ş ÀÔ´Ï´Ù.");
+			System.out.println("ë“±ê¸‰ì„ ì•ˆë‚´í•©ë‹ˆë‹¤..");
+			System.out.println(age + "ì„¸" + name + "ë‹˜ì€ 2ë“±ê¸‰ì…ë‹ˆë‹¤.");	
 		} else if (score >=85) {
-			System.out.println("Á¡¼ö°¡ 85Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-			System.out.println(age + "ÇĞ³â " + name + "´ÔÀÇ µî±ŞÀº 3µî±Ş ÀÔ´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 85ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+			System.out.println(age + "ì„¸" + name + "ë‹˜ì€ 3ë“±ê¸‰ì…ë‹ˆë‹¤.");	
 		} else if (score >=70) {
-			System.out.println("Á¡¼ö°¡ 70Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-			System.out.println(age + "ÇĞ³â " + name + "´ÔÀÇ µî±ŞÀº 4µî±Ş ÀÔ´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 70ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+			System.out.println(age + "ì„¸" + name + "ë‹˜ì€ 4ë“±ê¸‰ì…ë‹ˆë‹¤.");	
 		} else if (score < 60) {
-			System.out.println("Á¡¼ö°¡ 60Á¡ ÀÌÇÏÀÔ´Ï´Ù.");
-			System.out.println(age + "ÇĞ³â " + name + "´ÔÀº ÅğÇĞ´çÇÏ¼Ì½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 60ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
+			System.out.println(age + "ì„¸" + name + "ë‹˜ì€ 5ë“±ê¸‰ì…ë‹ˆë‹¤.");	
 				
 		}
 
