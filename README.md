@@ -8,3 +8,5 @@ JAVA는 17버전을 설치함.
 이클립스는 2022.3 버전을 사용함.
 
 교재는 자바 마스터 교재를 사용함.
+
+![슬라이드2](https://github.com/user-attachments/assets/cdd838d6-550d-42a8-b8ee-278a54c5d0d5)
