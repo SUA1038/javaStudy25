@@ -5,531 +5,513 @@ import java.util.Scanner;
 public class SwitchIfExam {
 
 	public static void main(String[] args) {
-		// Switch´Â Á¶°Ç Á¦¾î¹®ÀÌ´Ù. 
-				// Á¶°ÇÀÌ ¸ÂÀ¸¸é case: ¿¡ ÀÖ´Â ½ÇÇà¹®ÀÌ ½ÇÇàµÈ´Ù.
-				// if¹®Àº true³ª falseÀÇ Á¶°ÇÀÌ 2°³ ÀÖÁö¸¸, Switch¹®Àº ¿©·¯°³ÀÇ Á¶°Ç °á°ú¸¦ ¹Þ´Â´Ù.
+		// Switchï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½î¹®ï¿½Ì´ï¿½. 
+				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ case: ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½à¹®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È´ï¿½.
+				// ifï¿½ï¿½ï¿½ï¿½ trueï¿½ï¿½ falseï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, Switchï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´Â´ï¿½.
 				
-				// ¼ºÀû Ã³¸® ÇÁ·Î±×·¥À» ¸¸µé¾î º¸ÀÚ.
-				// keypoint : C(»ý¼º) R(ÀÐ±â) U(¼öÁ¤) D(»èÁ¦)
-				// ±³Á÷¿ø		: 
-				// ÇÐ»ý		:
-				// ¼ºÀû		:
-				// ÇÁ·Î±×·¥ Á¾·á
+				// ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
+				// keypoint : C(ï¿½ï¿½ï¿½ï¿½) R(ï¿½Ð±ï¿½) U(ï¿½ï¿½ï¿½ï¿½) D(ï¿½ï¿½ï¿½ï¿½)
+				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½		: 
+				// ï¿½Ð»ï¿½		:
+				// ï¿½ï¿½ï¿½ï¿½		:
+				// ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½
 		
 		
-		// ±³Á÷¿ø µî·Ï Á¤º¸
-		String tName1 = "±è¼ö¾Æ";
-		String tAge1 = "22";
-		String tGender1 = "¿©¼º";
+		// ì„ ìƒë‹˜ ì •ë³´ ê¸°ìž…
+		String tName1 = "ê¹€ìˆ˜ì•„";
+		int tAge1 = 22;
+		String tGender1 = "ì—¬ì„±";
 		
-		String tName2 = "±è±â¿ø";
-		String tAge2 = "20";
-		String tGender2 = "³²¼º";
+		String tName2 = "ê¹€ê¸°ì›";
+		int tAge2 = 20;
+		String tGender2 = "ë‚¨ì„±";
 		
-		// ÇÐ»ý µî·Ï Á¤º¸
-		String sName1 = "±èÈ«¹Ì";
-		String sAge1 = "17";
-		String sGender1 = "¿©¼º";
-		// ±èÈ«¹Ì ÇÐ»ýÀÇ ¼ºÀû
+		// í•™ìƒ ì •ë³´ ê¸°ìž…
+		String sName1 = "ê¹€í™ë¯¸";
+		int sAge1 = 17;
+		String sGender1 = "ì—¬ì„±";
+		
+		String sName2 = "ê¹€ë„ì—°";
+		int sAge2 = 16;
+		String sGender2 = "ë‚¨ì„±";
+		
+		
+		// í•™ìƒ ì„±ì  ê¸°ìž…
 		int s1kor = 97;
 		int s1eng = 89;
 		int s1mat = 78;
-		
-		String sName2 = "±èµµ¿¬";
-		String sAge2 = "16";
-		String sGender2 = "³²¼º";
-		// ±èµµ¿¬ ÇÐ»ýÀÇ ¼ºÀû
+			
 		int s2kor = 67;
 		int s2eng = 49;
 		int s2mat = 96;
 		
 		
 				
-				// ¸Þ´º ±¸Çö(¾ËÆÄºªÀ» ´­·¯¼­ ¸Þ´º·Î ÁøÀÔ)
+				// í”„ë¡œê·¸ëž¨ ì‹œìž‘
 				
 				Scanner input = new Scanner(System.in);
 				System.out.println("===============================");
-				System.out.println("==========¿¥ºñ¾¾ ¾ÆÄ«µ¥¹Ì==========");
-				System.out.println("==========¼ºÀûÃ³¸®ÇÁ·Î±×·¥==========");
+				System.out.println("==========ì— ë¹„ì”¨ ì•„ì¹´ë°ë¯¸==========");
+				System.out.println("==========ì„±ì ì²˜ë¦¬í”„ë¡œê·¸ëž¨==========");
 				System.out.println("===============================");
-				System.out.println("a. ±³Á÷¿ø °ü¸®");
-				System.out.println("b. ÇÐ»ý °ü¸®");
-				System.out.println("c. ¼ºÀû °ü¸®");
-				System.out.println("z. ÇÁ·Î±×·¥ Á¾·á");
+				System.out.println("a. êµì§ì› ê´€ë¦¬");
+				System.out.println("b. í•™ìƒ ê´€ë¦¬");
+				System.out.println("c. ì„±ì  ê´€ë¦¬");
+				System.out.println("z. í”„ë¡œê·¸ëž¨ ì¢…ë£Œ");
 				System.out.print("(a~z)>>> ");
 				
 				char select = input.next().charAt(0);
-				// System.out.println("¼±ÅÃÇÑ ¹®ÀÚ : " + select );
+				// System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : " + select );
 				
-				switch(select) { // switch¹® ½ÃÀÛ
+				switch(select) { // switchë¬¸ ì‹œìž‘
 				
-				//±³Á÷¿ø °ü¸® ¸Þ´º ½ÃÀÛ
+				// êµì§ì› ê´€ë¦¬ case ì‹œìž‘
 				case 'A' :
 				case 'a' :
-					System.out.println("±³Á÷¿ø °ü¸® ¸Þ´º·Î ÁøÀÔÇÏ¼Ì½À´Ï´Ù.");
-					System.out.println("1. ±³Á÷¿ø µî·Ï");
-					System.out.println("2. ±³Á÷¿ø º¸±â");
-					System.out.println("3. ±³Á÷¿ø ¼öÁ¤");
-					System.out.println("4. ±³Á÷¿ø »èÁ¦");
+					System.out.println("êµì§ì› ê´€ë¦¬ ë©”ë‰´ì— ì§„ìž…í•˜ì…¨ìŠµë‹ˆë‹¤.");
+					System.out.println("1. êµì§ì› ë“±ë¡");
+					System.out.println("2. êµì§ì› ë³´ê¸°");
+					System.out.println("3. êµì§ì› ìˆ˜ì •");
+					System.out.println("4. êµì§ì› ì‚­ì œ");
 					System.out.print("(1~4)>>> ");
 					int subSelect = input.nextInt();
-					switch(subSelect){
+					switch(subSelect){ // êµì§ì› ê´€ë¦¬ ë©”ë‰´ switch ì‹œìž‘ 
 					
 					case 1 : 
-						// µî·ÏµÈ ±³Á÷¿ø
+						// êµì§ì› ê´€ë¦¬ ë©”ë‰´ case ì‹œìž‘
 						
 						
-						//±³Á÷¿ø µî·Ï
-						System.out.println("±³Á÷¿ø µî·Ï ¸Þ´º·Î ÀÌµ¿ÇÕ´Ï´Ù.");
-						System.out.println("µî·ÏÇÒ ±³Á÷¿øÀÇ ÀÌ¸§À» ÀÛ¼ºÇÏ¼¼¿ä.");
+						//êµì§ì› ë“±ë¡ case ì‹œìž‘
+						System.out.println("êµì§ì› ë“±ë¡ ë©”ë‰´ì— ì§„ìž…í•˜ì…¨ìŠµë‹ˆë‹¤.");
+						System.out.println("ë“±ë¡í•  êµì§ì›ì˜ ì´ë¦„ì„ ìž‘ì„±í•´ì£¼ì„¸ìš”.");
 						System.out.print(">>> ");
 						String tName3 = input.next();
 						
-						System.out.println("µî·ÏÇÒ ±³Á÷¿øÀÇ ³ªÀÌ¸¦ ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("ë“±ë¡í•  êµì§ì›ì˜ ë‚˜ì´ë¥¼ ìž‘ì„±í•´ì£¼ì„¸ìš”.");
 						System.out.print(">>> ");
-						String tAge3 = input.next();
+						int tAge3 = input.nextInt();
 						
-						System.out.println("µî·ÏÇÒ ±³Á÷¿øÀÇ ¼ºº° ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("ë“±ë¡í•  êµì§ì›ì˜ ì„±ë³„ì„ ìž‘ì„±í•´ì£¼ì„¸ìš”.");
 						System.out.print(">>> ");
 						String tGender3 = input.next();
 						
-						System.out.println(tAge3 + "¼¼ " + tGender3 + ", " + tName3 + " ´ÔÀÌ µî·ÏµÇ¾ú½À´Ï´Ù.");
-						break; // ±³Á÷¿ø Á¤º¸ µî·Ï Á¾·á
+						System.out.println(tAge3 + "ì„¸ " + tGender3 + ", " + tName3 + " ë‹˜ì˜ ë“±ë¡ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
+						break; // êµì§ì› ë“±ë¡ case ì¢…ë£Œ
 						
 					case 2 :
-						System.out.println("±³Á÷¿ø º¸±â ¸Þ´º·Î ÀÌµ¿ÇÕ´Ï´Ù.");
-						System.out.println("Ã£À¸½Ã´Â ±³Á÷¿øÀÇ ÀÌ¸§À» ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("êµì§ì› ë³´ê¸° ë©”ë‰´ì— ì§„ìž…í•˜ì…¨ìŠµë‹ˆë‹¤.");
+						System.out.println("ì°¾ì•„ë³¼ êµì§ì›ì˜ ì´ë¦„ì„ ìž‘ì„±í•´ì£¼ì„¸ìš”.");
 						System.out.print(">>> ");
 						String teacherName = input.next();
-						if (teacherName.equals(tName1)) { // µî·ÏµÇ¾îÀÖ´Â ¼±»ý´Ô Á¤º¸ Ãâ·Â
-							System.out.println(tName1 + " ´ÔÀº " + tAge1 + " ¼¼ " + tGender1 + "ÀÔ´Ï´Ù.");
-						} else if (teacherName.equals(tName2)){ // µî·ÏµÇ¾îÀÖ´Â ¼±»ý´Ô Á¤º¸ Ãâ·Â
-							System.out.println(tName2 + " ´ÔÀº " + tAge2 + " ¼¼ " + tGender2 + "ÀÔ´Ï´Ù.");
+						if (teacherName.equals(tName1)) { // êµì§ì› ë³´ê¸° ifë¬¸ ì‹œìž‘
+							System.out.println(tName1 + " ë‹˜ì€ " + tAge1 + " ì„¸ " + tGender1 + " ìž…ë‹ˆë‹¤.");
+						} else if (teacherName.equals(tName2)){ // ï¿½ï¿½ÏµÇ¾ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+							System.out.println(tName2 + " ë‹˜ì€ " + tAge2 + " ì„¸ " + tGender2 + " ìž…ë‹ˆë‹¤.");
 						} else {
-							System.out.println("µî·ÏµÈ Á¤º¸°¡ ¾ø½À´Ï´Ù.");
+							System.out.println("ë“±ë¡ë˜ì§€ ì•Šì€ ì´ë¦„ìž…ë‹ˆë‹¤.");
 						}
-						break; // ±³Á÷¿ø Á¤º¸ Ã£±â Á¾·á
+						break; // êµì§ì› ë³´ê¸° case ì¢…ë£Œ
 						
 					case 3 :
-						System.out.println("±³Á÷¿ø ¼öÁ¤ ¸Þ´º·Î ÀÌµ¿ÇÕ´Ï´Ù.");
-						System.out.println("¼öÁ¤ÇÏ·Á´Â ±³Á÷¿øÀÇ ÀÌ¸§À» ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("êµì§ì› ìˆ˜ì • ë©”ë‰´ì— ì§„ìž…í•˜ì…¨ìŠµë‹ˆë‹¤.");
+						System.out.println("ìˆ˜ì •í•  êµì§ì›ì˜ ì´ë¦„ì„ ìž‘ì„±í•´ì£¼ì„¸ìš”.");
 						System.out.print(">>> ");
 						String uTName = input.next();
-						if (uTName.equals(tName1)) { // ±³Á÷¿ø Á¤º¸ ¼öÁ¤ if¹® ½ÃÀÛ
-							System.out.println("ÇöÀç µî·ÏµÈ " + tName1 + " ´ÔÀÇ Á¤º¸ÀÔ´Ï´Ù." );
-							System.out.println("ÀÌ¸§ : " + tName1);
-							System.out.println("³ªÀÌ : " + tAge1);
-							System.out.println("¼ºº° : " + tGender1);
+						if (uTName.equals(tName1)) { // êµì§ì› ìˆ˜ì • ifë¬¸ ì‹œìž‘
+							System.out.println("í˜„ìž¬ ë“±ë¡ëœ " + tName1 + " ë‹˜ì˜ ì •ë³´ìž…ë‹ˆë‹¤." );
+							System.out.println("ì´ë¦„ : " + tName1);
+							System.out.println("ë‚˜ì´ : " + tAge1);
+							System.out.println("ì„±ë³„ : " + tGender1);
 							
-							System.out.println("»õ·Î µî·ÏÇÒ Á¤º¸¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
-							System.out.print("ÀÌ¸§ : ");
+							System.out.println("ìˆ˜ì •í•  ì •ë³´ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
+							System.out.print("ì´ë¦„ : ");
 							String newTName1 = input.next();
-							System.out.print("³ªÀÌ : ");
-							String newTAge1 = input.next();
-							System.out.print("¼ºº° : ");
+							System.out.print("ë‚˜ì´ : ");
+							int newTAge1 = input.nextInt();
+							System.out.print("ì„±ë³„ : ");
 							String newTGender1 = input.next();
 							
-							System.out.println("Á¤º¸¸¦ ¾÷µ¥ÀÌÆ® ÇÕ´Ï´Ù.");
+							System.out.println("ì •ë³´ê°€ ì •ìƒì ìœ¼ë¡œ ìˆ˜ì •ë˜ì—ˆìŠµë‹ˆë‹¤.");
 							tName1 = newTName1;
 							tAge1 = newTAge1;
 							tGender1 = newTGender1;		
-						} else if (uTName.equals(tName2)) { // ±³Á÷¿ø Á¤º¸ ¼öÁ¤ if¹® ½ÃÀÛ
-							System.out.println("ÇöÀç µî·ÏµÈ " + tName2 + " ´ÔÀÇ Á¤º¸ÀÔ´Ï´Ù." );
-							System.out.println("ÀÌ¸§ : " + tName2);
-							System.out.println("³ªÀÌ : " + tAge2);
-							System.out.println("¼ºº° : " + tGender2);
+						} else if (uTName.equals(tName2)) { // 
+							System.out.println("í˜„ìž¬ ë“±ë¡ëœ" + tName2 + " ë‹˜ì˜ ì •ë³´ìž…ë‹ˆë‹¤." );
+							System.out.println("ì•„ë£¸ : " + tName2);
+							System.out.println("ë‚˜ì´ : " + tAge2);
+							System.out.println("ì„±ë³„ : " + tGender2);
 							
-							System.out.println("»õ·Î µî·ÏÇÒ Á¤º¸¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
-							System.out.print("ÀÌ¸§ : ");
+							System.out.println("ìˆ˜ì •í•  ì •ë³´ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
+							System.out.print("ì´ë¦„ : ");
 							String newTName2 = input.next();
-							System.out.print("³ªÀÌ : ");
-							String newTAge2 = input.next();
-							System.out.print("¼ºº° : ");
+							System.out.print("ë‚˜ì´ : ");
+							int newTAge2 = input.nextInt();
+							System.out.print("ì„±ë³„ : ");
 							String newTGender2 = input.next();
 							
-							System.out.println("Á¤º¸¸¦ ¾÷µ¥ÀÌÆ® ÇÕ´Ï´Ù.");
+							System.out.println("ì •ë³´ê°€ ì •ìƒì ìœ¼ë¡œ ìˆ˜ì •ë˜ì—ˆìŠµë‹ˆë‹¤.");
 							tName2 = newTName2;
 							tAge2 = newTAge2;
 							tGender2 = newTGender2;		
 						} else {
-							System.out.println("Á¤º¸¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù. ½Å±Ô µî·ÏÀ» ÇØÁÖ¼¼¿ä.");
-						} // ±³Á÷¿ø Á¤º¸ ¼öÁ¤ if¹® Á¾·á 
+							System.out.println("í•´ë‹¹ë˜ëŠ” êµì§ì› ì •ë³´ê°€ ì—†ìŠµë‹ˆë‹¤.");
+						} 
 						
-						break; // ±³Á÷¿ø Á¤º¸ ¼öÁ¤ Á¾·á
+						break; // êµì§ì› ìˆ˜ì • case ì¢…ë£Œ
 						
 					case 4 : 
-						System.out.println("±³Á÷¿ø »èÁ¦ ¸Þ´º·Î ÀÌµ¿ÇÕ´Ï´Ù.");
-						System.out.println("»èÁ¦ÇÏ·Á´Â ±³Á÷¿øÀÇ ÀÌ¸§À» ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("êµì§ì› ì‚­ì œ ë©”ë‰´ë¡œ ì§„ìž…í•˜ì˜€ìŠµë‹ˆë‹¤.");
+						System.out.println("ì‚­ì œí•  .");
 						System.out.print(">>> ");
 						String dTName = input.next();
-						if (dTName.equals(tName1)) { // ±³Á÷¿ø Á¤º¸ »èÁ¦ if¹® ½ÃÀÛ
-							System.out.println(tName1 + " ´ÔÀÇ Á¤º¸ »èÁ¦¸¦ µ¿ÀÇÇÏ½Ã¸é yes¸¦ ÀÛ¼ºÇØÁÖ¼¼¿ä.");
+						if (dTName.equals(tName1)) { // êµì§ì› ì‚­ì œ ifë¬¸ ì‹œìž‘
+							System.out.println(tName1 + " ë‹˜ì˜ ì •ë³´ ì‚­ì œë¥¼ ì›í•˜ì‹œë©´ yesë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 							System.out.print(">>> ");
 							String yes = input.next();
-							// »èÁ¦ µ¿ÀÇ if¹® 1 ½ÃÀÛ
 							if (yes.equalsIgnoreCase("yes")) {
-								// µî·ÏµÇ¾îÀÖ´Â Á¤º¸ ÃÊ±âÈ­
-								tName1 = "¹Ìµî·Ï";
-								tAge1 = "¹Ìµî·Ï";
-								tGender1 = "¹Ìµî·Ï";
-								System.out.println("ÇØ´ç ±³Á÷¿øÀÇ Á¤º¸°¡ »èÁ¦µÇ¾ú½À´Ï´Ù.");
-							} else System.out.println("±³Á÷¿ø Á¤º¸ »èÁ¦¸¦ Ãë¼ÒÇÕ´Ï´Ù.");
-							// »èÁ¦ µ¿ÀÇ if¹® 1 Á¾·á
-						} // »èÁ¦ if¹® Á¾·á
+								// ì‚­ì œ í™•ì¸
+								tName1 = "ìš”ì²­ì— ì˜í•´ ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.";
+								tAge1 = 00;
+								tGender1 = "ìš”ì²­ì— ì˜í•´ ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.";
+								System.out.println("êµì§ì› ì •ë³´ê°€ ì •ìƒì ìœ¼ë¡œ ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.");
+							} else System.out.println("êµì§ì› ì •ë³´ ì‚­ì œê°€ ì·¨ì†Œë˜ì—ˆìŠµë‹ˆë‹¤.");
+						} // ï¿½ï¿½ï¿½ï¿½ ifï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 						else if (dTName.equals(tName2)){
-							System.out.println(tName2 + " ´ÔÀÇ Á¤º¸ »èÁ¦¸¦ µ¿ÀÇÇÏ½Ã¸é yes¸¦ ÀÛ¼ºÇØÁÖ¼¼¿ä.");
+							System.out.println(tName2 + " ë‹˜ì˜ ì •ë³´ ì‚­ì œë¥¼ ì›í•˜ì‹œë©´ yesë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 							System.out.print(">>> ");
 							String yes = input.next();
-							// »èÁ¦ µ¿ÀÇ if¹® 2 ½ÃÀÛ
+							// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ifï¿½ï¿½ 2 ï¿½ï¿½ï¿½ï¿½
 							if (yes.equalsIgnoreCase("yes")) {
-								// µî·ÏµÇ¾îÀÖ´Â Á¤º¸ ÃÊ±âÈ­
-								tName2 = "¹Ìµî·Ï";
-								tAge2 = "¹Ìµî·Ï";
-								tGender2 = "¹Ìµî·Ï";
-								System.out.println("ÇØ´ç ±³Á÷¿øÀÇ Á¤º¸°¡ »èÁ¦µÇ¾ú½À´Ï´Ù.");
-							} else System.out.println("±³Á÷¿ø Á¤º¸ »èÁ¦¸¦ Ãë¼ÒÇÕ´Ï´Ù."); 
-							// »èÁ¦ µ¿ÀÇ if¹® 2 Á¾·á
-						} else {
-							System.out.println("¿À·ù ÃßÁ¤, ÇØ´ç ÀÎ¹°À» È®ÀÎÇÒ ¼ö ¾ø½À´Ï´Ù.");
-						} // ±³Á÷¿ø Á¤º¸ »èÁ¦ if¹® Á¾·á
-						break; // ±³Á÷¿ø Á¤º¸ »èÁ¦ Á¾·á
+								// ï¿½ï¿½ÏµÇ¾ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
+								tName2 = "ìš”ì²­ì— ì˜í•´ ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.";
+								tAge2 = 00;
+								tGender2 = "ìš”ì²­ì— ì˜í•´ ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.";
+								System.out.println("êµì§ì› ì •ë³´ê°€ ì •ìƒì ìœ¼ë¡œ ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.");
+							} else System.out.println("êµì§ì› ì •ë³´ ì‚­ì œê°€ ì·¨ì†Œë˜ì—ˆìŠµë‹ˆë‹¤."); 
+							// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ifï¿½ï¿½ 2 ï¿½ï¿½ï¿½ï¿½
+						} else System.out.println("í•´ë‹¹ë˜ëŠ” êµì§ì› ì •ë³´ê°€ ì—†ìŠµë‹ˆë‹¤.");
+						} // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ifï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+						break; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 						
 					default :
-						System.out.println("1~4°ª¸¸ ÀÔ·ÂÇÏ¼¼¿ä.");
-						System.out.println("ÇÁ·Î±×·¥À» ´Ù½Ã ½ÇÇàÇÏ¼¼¿ä.");
-						break;
-						
-					} // ±³Á÷¿ø ½ºÀ§Ä¡¹® Á¾·á
-					break; // ±³Á÷¿ø °ü¸® ¸Þ´º Á¾·á
+						System.out.println("1~4 ì‚¬ì´ì˜ ë©”ë‰´ë¥¼ ë‹¤ì‹œ ì„ íƒí•´ì£¼ì„¸ìš”.");
+						break;				
 				
-				// ÇÐ»ý °ü¸® ¸Þ´º ½ÃÀÛ
+				// í•™ìƒ ê´€ë¦¬ case ì‹œìž‘
 				case 'B' :
 				case 'b' :
-					System.out.println("ÇÐ»ý °ü¸® ¸Þ´º·Î ÁøÀÔÇÏ¼Ì½À´Ï´Ù.");
-					System.out.println("1. ÇÐ»ý µî·Ï");
-					System.out.println("2. ÇÐ»ý º¸±â");
-					System.out.println("3. ÇÐ»ý ¼öÁ¤");
-					System.out.println("4. ÇÐ»ý »èÁ¦");
+					System.out.println("í•™ìƒ ê´€ë¦¬ ë©”ë‰´ë¡œ ì§„ìž…í–ˆìŠµë‹ˆë‹¤.");
+					System.out.println("1. í•™ìƒ ë“±ë¡");
+					System.out.println("2. í•™ìƒ ë³´ê¸°");
+					System.out.println("3. í•™ìƒ ìˆ˜ì •");
+					System.out.println("4. í•™ìƒ ì‚­ì œ");
 					System.out.print("(1~4)>>> ");
 					int subSelect2 = input.nextInt();
-					switch(subSelect2){ // ÇÐ»ý °ü¸® switch ½ÃÀÛ
+					switch(subSelect2){ // í•™ìƒ ê´€ë¦¬ switch ë¬¸ ì‹œìž‘
 					
-					// ÇÐ»ý µî·Ï ¸Þ´º ½ÃÀÛ
+					// í•™ìƒ ë“±ë¡ ë©”ë‰´ case ì‹œìž‘
 					case 1 : 
-						System.out.println("ÇÐ»ý µî·Ï ¸Þ´º·Î ÀÌµ¿ÇÕ´Ï´Ù.");
-						System.out.println("µî·ÏÇÒ ÇÐ»ýÀÇ ÀÌ¸§À» ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("í•™ìƒ ë“±ë¡ ë©”ë‰´ë¡œ ì§„ìž…í–ˆìŠµë‹ˆë‹¤.");
+						System.out.println("ë“±ë¡í•  í•™ìƒì˜ ì´ë¦„ì„ ìž‘ì„±í•´ì£¼ì„¸ìš”.");
 						System.out.print(">>> ");
 						String sName3 = input.next();
 						
-						System.out.println("µî·ÏÇÒ ÇÐ»ýÀÇ ³ªÀÌ¸¦ ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("ë“±ë¡í•  í•™ìƒì˜ ë‚˜ì´ë¥¼ ìž‘ì„±í•´ì£¼ì„¸ìš”.");
 						System.out.print(">>> ");
-						String sAge3 = input.next();
+						int sAge3 = input.nextInt();
 						
-						System.out.println("µî·ÏÇÒ ÇÐ»ýÀÇ ¼ºº° ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("ë“±ë¡í•  í•™ìƒì˜ ì„±ë³„ì„ ìž‘ì„±í•´ì£¼ì„¸ìš”.");
 						System.out.print(">>> ");
 						String sGender3 = input.next();
 						
-						System.out.println(sAge3 + "¼¼ " + sGender3 + ", " + sName3 + " ´ÔÀÌ µî·ÏµÇ¾ú½À´Ï´Ù.");	
+						System.out.println(sAge3 + "ì„¸ " + sGender3 + ", " + sName3 + " ë‹˜ì´ ë“±ë¡ë˜ì—ˆìŠµë‹ˆë‹¤.");	
 					break;
-					// ÇÐ»ý µî·Ï ¸Þ´º Á¾·á
+					// í•™ìƒ ë“±ë¡ ë©”ë‰´ case ì¢…ë£Œ
 					
-					// ÇÐ»ý º¸±â ¸Þ´º ½ÃÀÛ
+					// í•™ìƒ ë³´ê¸° ë©”ë‰´ case ì‹œìž‘
 					case 2 : 
-						System.out.println("ÇÐ»ý º¸±â ¸Þ´º·Î ÀÌµ¿ÇÕ´Ï´Ù.");
-						System.out.println("Ã£À¸½Ã´Â ÇÐ»ýÀÇ ÀÌ¸§À» ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("í•™ìƒ ë³´ê¸° ë©”ë‰´ë¡œ ì§„ìž…í–ˆìŠµë‹ˆë‹¤.");
+						System.out.println("í™•ì¸í•  í•™ìƒì˜ ì´ë¦„ì„ ìž‘ì„±í•´ì£¼ì„¸ìš”.");
 						System.out.print(">>> ");
 						String studentName = input.next();
-						if (studentName.equals(sName1)) { // µî·ÏµÇ¾îÀÖ´Â ÇÐ»ý Á¤º¸ Ãâ·Â
-							System.out.println(sName1 + " ´ÔÀº " + sAge1 + " ¼¼ " + sGender1 + "ÀÔ´Ï´Ù.");
-						} else if (studentName.equals(sName2)){ // µî·ÏµÇ¾îÀÖ´Â ¼±»ý´Ô Á¤º¸ Ãâ·Â
-							System.out.println(sName2 + " ´ÔÀº " + sAge2 + " ¼¼ " + sGender2 + "ÀÔ´Ï´Ù.");
+						if (studentName.equals(sName1)) { 
+							System.out.println(sName1 + " ë‹˜ì€ " + sAge1 + " ì„¸ " + sGender1 + " ìž…ë‹ˆë‹¤.");
+						} else if (studentName.equals(sName2)){ // ï¿½ï¿½ÏµÇ¾ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+							System.out.println(sName2 + " ë‹˜ì€ " + sAge2 + " ì„¸ " + sGender2 + " ìž…ë‹ˆë‹¤.");
 						} else {
-							System.out.println("µî·ÏµÈ Á¤º¸°¡ ¾ø½À´Ï´Ù.");
+							System.out.println("í•´ë‹¹ë˜ëŠ” í•™ìƒ ì •ë³´ê°€ ì—†ìŠµë‹ˆë‹¤.");
 						}
 					break;
-					// ÇÐ»ý º¸±â ¸Þ´º Á¾·á
+					// í•™ìƒ ë³´ê¸° ë©”ë‰´ case ì¢…ë£Œ
 					
-					// ÇÐ»ý ¼öÁ¤ ¸Þ´º ½ÃÀÛ
+					// í•™ìƒ ìˆ˜ì • ë©”ë‰´ case ì‹œìž‘
 					case 3 : 
-						System.out.println("ÇÐ»ý ¼öÁ¤ ¸Þ´º·Î ÀÌµ¿ÇÕ´Ï´Ù.");
-						System.out.println("¼öÁ¤ÇÏ·Á´Â ÇÐ»ýÀÇ ÀÌ¸§À» ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("í•™ìƒ ìˆ˜ì • ë©”ë‰´ë¡œ ì§„ìž…í–ˆìŠµë‹ˆë‹¤.");
+						System.out.println("ìˆ˜ì •í•  í•™ìƒì˜ ì´ë¦„ì„ ìž‘ì„±í•´ì£¼ì„¸ìš”.");
 						System.out.print(">>> ");
 						String uSName = input.next();
-						if (uSName.equals(sName1)) { // ÇÐ»ý Á¤º¸ ¼öÁ¤ if¹® ½ÃÀÛ
-							System.out.println("ÇöÀç µî·ÏµÈ " + sName1 + " ´ÔÀÇ Á¤º¸ÀÔ´Ï´Ù." );
-							System.out.println("ÀÌ¸§ : " + sName1);
-							System.out.println("³ªÀÌ : " + sAge1);
-							System.out.println("¼ºº° : " + sGender1);
+						if (uSName.equals(sName1)) { // ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ifï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+							System.out.println("í˜„ìž¬ ë“±ë¡ëœ " + sName1 + " ë‹˜ì˜ ì •ë³´ìž…ë‹ˆë‹¤." );
+							System.out.println("ì´ë¦„ : " + sName1);
+							System.out.println("ë‚˜ì´ : " + sAge1);
+							System.out.println("ì„±ë³„ : " + sGender1);
 							
-							System.out.println("»õ·Î µî·ÏÇÒ Á¤º¸¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
-							System.out.print("ÀÌ¸§ : ");
+							System.out.println("ìˆ˜ì •í•  ì •ë³´ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
+							System.out.print("ì´ë¦„ : ");
 							String newSName1 = input.next();
-							System.out.print("³ªÀÌ : ");
-							String newSAge1 = input.next();
-							System.out.print("¼ºº° : ");
+							System.out.print("ë‚˜ì´ : ");
+							int newSAge1 = input.nextInt();
+							System.out.print("ì„±ë³„ : ");
 							String newSGender1 = input.next();
 							
-							System.out.println("Á¤º¸¸¦ ¾÷µ¥ÀÌÆ® ÇÕ´Ï´Ù.");
+							System.out.println("ì •ë³´ê°€ ì •ìƒì ìœ¼ë¡œ ìˆ˜ì •ë˜ì—ˆìŠµë‹ˆë‹¤.");
 							sName1 = newSName1;
 							sAge1 = newSAge1;
 							sGender1 = newSGender1;		
-						} else if (uSName.equals(sName2)) { // ±³Á÷¿ø Á¤º¸ ¼öÁ¤ if¹® ½ÃÀÛ
-							System.out.println("ÇöÀç µî·ÏµÈ " + sName2 + " ´ÔÀÇ Á¤º¸ÀÔ´Ï´Ù." );
-							System.out.println("ÀÌ¸§ : " + sName2);
-							System.out.println("³ªÀÌ : " + sAge2);
-							System.out.println("¼ºº° : " + sGender2);
+						} else if (uSName.equals(sName2)) { 
+							System.out.println("í˜„ìž¬ ë“±ë¡ëœ " + sName2 + "ë‹˜ì˜ ì •ë³´ìž…ë‹ˆë‹¤." );
+							System.out.println("ì´ë¦„ : " + sName2);
+							System.out.println("ë‚˜ì´ : " + sAge2);
+							System.out.println("ì„±ë³„ : " + sGender2);
 							
-							System.out.println("»õ·Î µî·ÏÇÒ Á¤º¸¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
-							System.out.print("ÀÌ¸§ : ");
+							System.out.println("ìˆ˜ì •í•  ì •ë³´ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
+							System.out.print("ì´ë¦„ : ");
 							String newSName2 = input.next();
-							System.out.print("³ªÀÌ : ");
-							String newSAge2 = input.next();
-							System.out.print("¼ºº° : ");
+							System.out.print("ë‚˜ì´ : ");
+							int newSAge2 = input.nextInt();
+							System.out.print("ì„±ë³„ : ");
 							String newSGender2 = input.next();
 							
-							System.out.println("Á¤º¸¸¦ ¾÷µ¥ÀÌÆ® ÇÕ´Ï´Ù.");
+							System.out.println("ì •ë³´ê°€ ì •ìƒì ìœ¼ë¡œ ìˆ˜ì •ë˜ì—ˆìŠµë‹ˆë‹¤.");
 							sName2 = newSName2;
 							sAge2 = newSAge2;
 							sGender2 = newSGender2;		
 						} else {
-							System.out.println("Á¤º¸¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù. ½Å±Ô µî·ÏÀ» ÇØÁÖ¼¼¿ä.");
-						} // ÇÐ»ý Á¤º¸ ¼öÁ¤ if¹® Á¾·á 
+							System.out.println("ë“±ë¡ëœ ì •ë³´ê°€ ì—†ìŠµë‹ˆë‹¤.");
+						} // ifë¬¸ ì¢…ë£Œ
 					break;
-					// ÇÐ»ý ¼öÁ¤ ¸Þ´º Á¾·á
+					// í•™ìƒ ìˆ˜ì • ë©”ë‰´ ì¢…ë£Œ
 					
-					// ÇÐ»ý »èÁ¦ ¸Þ´º ½ÃÀÛ
+					// í•™ìƒ ì‚­ì œ case ì‹œìž‘
 					case 4 : 
-						System.out.println("±³Á÷¿ø ÇÐ»ý ¸Þ´º·Î ÀÌµ¿ÇÕ´Ï´Ù.");
-						System.out.println("»èÁ¦ÇÏ·Á´Â ÇÐ»ýÀÇ ÀÌ¸§À» ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("í•™ìƒ ì‚­ì œ ë©”ë‰´ë¡œ ì§„ìž…í–ˆìŠµë‹ˆë‹¤.");
+						System.out.println("ì‚­ì œí•  í•™ìƒì˜ ì´ë¦„ì„ ìž‘ì„±í•´ì£¼ì„¸ìš”.");
 						System.out.print(">>> ");
 						String dSName = input.next();
-						if (dSName.equals(sName1)) { // ÇÐ»ý Á¤º¸ »èÁ¦ if¹® ½ÃÀÛ
-							System.out.println(sName1 + " ´ÔÀÇ Á¤º¸ »èÁ¦¸¦ µ¿ÀÇÇÏ½Ã¸é yes¸¦ ÀÛ¼ºÇØÁÖ¼¼¿ä.");
+						if (dSName.equals(sName1)) { // ifë¬¸ ì‹œìž‘
+							System.out.println(sName1 + "ì •ë§ë¡œ ì •ë³´ë¥¼ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ? ì‚­ì œë¥¼ ì›í•˜ë©´ yesë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 							System.out.print(">>> ");
 							String yes = input.next();
-							// »èÁ¦ µ¿ÀÇ if¹® 1 ½ÃÀÛ
 							if (yes.equalsIgnoreCase("yes")) {
-								// µî·ÏµÇ¾îÀÖ´Â Á¤º¸ ÃÊ±âÈ­
-								sName1 = "¹Ìµî·Ï";
-								sAge1 = "¹Ìµî·Ï";
-								sGender1 = "¹Ìµî·Ï";
-								System.out.println("ÇØ´ç ÇÐ»ýÀÇ Á¤º¸°¡ »èÁ¦µÇ¾ú½À´Ï´Ù.");
-							} else System.out.println("ÇÐ»ý Á¤º¸ »èÁ¦¸¦ Ãë¼ÒÇÕ´Ï´Ù.");
-							// »èÁ¦ µ¿ÀÇ if¹® 1 Á¾·á
-						} // »èÁ¦ if¹® Á¾·á
+								sName1 = "ì‚­ì œëœ ì •ë³´ìž…ë‹ˆë‹¤.";
+								sAge1 = 00;
+								sGender1 = "ì‚­ì œëœ ì •ë³´ìž…ë‹ˆë‹¤.";
+								System.out.println("ì •ë³´ê°€ ì •ìƒì ìœ¼ë¡œ ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.");
+							} else System.out.println("ì •ë³´ ì‚­ì œë¥¼ ì·¨ì†Œí•©ë‹ˆë‹¤.");
+							// ifë¬¸ ì¢…ë£Œ
+						} // ï¿½ï¿½ï¿½ï¿½ ifï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 						else if (dSName.equals(sName2)){
-							System.out.println(sName2 + " ´ÔÀÇ Á¤º¸ »èÁ¦¸¦ µ¿ÀÇÇÏ½Ã¸é yes¸¦ ÀÛ¼ºÇØÁÖ¼¼¿ä.");
+							System.out.println(sName2 + " ì •ë§ë¡œ ì •ë³´ë¥¼ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ? ì‚­ì œë¥¼ ì›í•˜ë©´ yesë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 							System.out.print(">>> ");
 							String yes = input.next();
-							// »èÁ¦ µ¿ÀÇ if¹® 2 ½ÃÀÛ
+							// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ifï¿½ï¿½ 2 ï¿½ï¿½ï¿½ï¿½
 							if (yes.equalsIgnoreCase("yes")) {
-								// µî·ÏµÇ¾îÀÖ´Â Á¤º¸ ÃÊ±âÈ­
-								sName2 = "¹Ìµî·Ï";
-								sAge2 = "¹Ìµî·Ï";
-								sGender2 = "¹Ìµî·Ï";
-								System.out.println("ÇØ´ç ÇÐ»ýÀÇ Á¤º¸°¡ »èÁ¦µÇ¾ú½À´Ï´Ù.");
-							} else System.out.println("ÇÐ»ý Á¤º¸ »èÁ¦¸¦ Ãë¼ÒÇÕ´Ï´Ù."); 
-							// »èÁ¦ µ¿ÀÇ if¹® 2 Á¾·á
+								// ï¿½ï¿½ÏµÇ¾ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
+								sName2 = "ì‚­ì œëœ ì •ë³´ìž…ë‹ˆë‹¤.";
+								sAge2 = 00;
+								sGender2 = "ì‚­ì œëœ ì •ë³´ìž…ë‹ˆë‹¤.";
+								System.out.println("ì •ë³´ê°€ ì •ìƒì ìœ¼ë¡œ ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.");
+							} else System.out.println("ì •ë³´ ì‚­ì œë¥¼ ì·¨ì†Œí•©ë‹ˆë‹¤."); 
+							// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ifï¿½ï¿½ 2 ï¿½ï¿½ï¿½ï¿½
 						} else {
-							System.out.println("¿À·ù ÃßÁ¤, ÇØ´ç ÀÎ¹°À» È®ÀÎÇÒ ¼ö ¾ø½À´Ï´Ù.");
-						} // ÇÐ»ý Á¤º¸ »èÁ¦ if¹® Á¾·á
+							System.out.println("ë“±ë¡ëœ ì •ë³´ê°€ ì—†ìŠµë‹ˆë‹¤.");
+						} // ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ifï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					break;
-					// ÇÐ»ý »èÁ¦ ¸Þ´º Á¾·á
+					// ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ï¿½
 					
 					default :
-						System.out.println("1~4°ª¸¸ ÀÔ·ÂÇÏ¼¼¿ä.");
-						System.out.println("ÇÁ·Î±×·¥À» ´Ù½Ã ½ÇÇàÇÏ¼¼¿ä.");
+						System.out.println("1~4ì˜ ê°’ì„ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 						break;
-					} // ÇÐ»ý °ü¸® switch Á¾·á
+					} // ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ switch ï¿½ï¿½ï¿½ï¿½
 					break;
 					
 				case 'C' :
 				case 'c' :
-					System.out.println("¼ºÀû °ü¸® ¸Þ´º·Î ÁøÀÔÇÏ¼Ì½À´Ï´Ù.");
-					System.out.println("1. ¼ºÀû µî·Ï");
-					System.out.println("2. ¼ºÀû º¸±â");
-					System.out.println("3. ¼ºÀû Æò±Õ °è»ê");
+					System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼Ì½ï¿½ï¿½Ï´ï¿½.");
+					System.out.println("1. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½");
+					System.out.println("2. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+					System.out.println("3. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½");
 					System.out.print("(1~3)>>> ");
 					int subSelect3 = input.nextInt();
-					switch(subSelect3){ // ¼ºÀû °ü¸® switch ½ÃÀÛ
+					switch(subSelect3){ // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ switch ï¿½ï¿½ï¿½ï¿½
 					
-					// ¼ºÀû µî·Ï ¸Þ´º ½ÃÀÛ
+					// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ï¿½
 					case 1 :
-						System.out.println("±ÍÇÏÀÇ ±¹¾î Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+						System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 						System.out.print(">>> ");
 						int kor = input.nextInt();
-						// ±¹¾î Á¡¼ö ÀÛ¼º
+						// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½
 
-						if (kor > 0 && kor <= 100) { // Á¡¼ö °ËÁõ
+						if (kor > 0 && kor <= 100) { // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 							if (kor >= 90) {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ 90Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + kor + " , ±¹¾î µî±Þ (A)");
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 90ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + kor + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (A)");
 							} else if (kor >= 80) {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ 89~80Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + kor + " , ±¹¾î µî±Þ (B)");
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 89~80ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + kor + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (B)");
 							} else if (kor >= 70) {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ 79~70Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + kor + " , ±¹¾î µî±Þ (C)");
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 79~70ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + kor + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (C)");
 							} else if (kor >= 60) {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ 69~60Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + kor + " , ±¹¾î µî±Þ (D)");
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 69~60ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + kor + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (D)");
 							} else {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ ³·¾Æ µî±ÞÀÌ F·Î °áÁ¤µÇ¾ú½À´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + kor + " , ±¹¾î µî±Þ (F)");
-							} // ±¹¾î Á¡¼ö °á°ú Á¤»ó Ãâ·Â
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ Fï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + kor + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (F)");
+							} // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 						} else {
-							System.out.println("¿À·ù ¹ß»ý. ÀÔ·Â°ªÀ» È®ÀÎÇØ ÁÖ¼¼¿ä.");
-							System.out.println("ÇöÀç ÀÔ·Â°ªÀº " + kor + " ÀÔ´Ï´Ù.");
-						} // ¿À·ù°ªÀÌ ÀÔ·ÂµÇ¾úÀ» ¶§ÀÇ Ãâ·Â¹®
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½. ï¿½Ô·Â°ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½.");
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â°ï¿½ï¿½ï¿½ " + kor + " ï¿½Ô´Ï´ï¿½.");
+						} // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ÂµÇ¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¹ï¿½
 						
-						System.out.println("±ÍÇÏÀÇ ¿µ¾î Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+						System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 						System.out.print(">>> ");
 						int eng = input.nextInt();
-						// ¿µ¾î Á¡¼ö ÀÛ¼º
+						// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½
 
-						if (eng > 0 && eng <= 100) { // Á¡¼ö °ËÁõ
+						if (eng > 0 && eng <= 100) { // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 							if (eng >= 90) {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ 90Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + eng + " , ¿µ¾î µî±Þ (A)");
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 90ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + eng + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (A)");
 							} else if (eng >= 80) {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ 89~80Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + eng + " , ¿µ¾î µî±Þ (B)");
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 89~80ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + eng + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (B)");
 							} else if (eng >= 70) {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ 79~70Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + eng + " , ¿µ¾î µî±Þ (C)");
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 79~70ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + eng + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (C)");
 							} else if (eng >= 60) {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ 69~60Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + eng + " , ¿µ¾î µî±Þ (D)");
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 69~60ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + eng + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (D)");
 							} else {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ ³·¾Æ µî±ÞÀÌ F·Î °áÁ¤µÇ¾ú½À´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + eng + " , ¿µ¾î µî±Þ (F)");
-							} // ±¹¾î Á¡¼ö °á°ú Á¤»ó Ãâ·Â
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ Fï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + eng + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (F)");
+							} // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 						} else {
-							System.out.println("¿À·ù ¹ß»ý. ÀÔ·Â°ªÀ» È®ÀÎÇØ ÁÖ¼¼¿ä.");
-							System.out.println("ÇöÀç ÀÔ·Â°ªÀº " + eng + " ÀÔ´Ï´Ù.");
-						} // ¿À·ù°ªÀÌ ÀÔ·ÂµÇ¾úÀ» ¶§ÀÇ Ãâ·Â¹®
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½. ï¿½Ô·Â°ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½.");
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â°ï¿½ï¿½ï¿½ " + eng + " ï¿½Ô´Ï´ï¿½.");
+						} // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ÂµÇ¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¹ï¿½
 						
-						System.out.println("±ÍÇÏÀÇ ¼öÇÐ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+						System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 						System.out.print(">>> ");
 						int mat = input.nextInt();
-						// ¼öÇÐ Á¡¼ö ÀÛ¼º
+						// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½
 
-						if (mat > 0 && mat <= 100) { // Á¡¼ö °ËÁõ
+						if (mat > 0 && mat <= 100) { // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 							if (mat >= 90) {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ 90Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + mat + " , ¼öÇÐ µî±Þ (A)");
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 90ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + mat + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (A)");
 							} else if (mat >= 80) {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ 89~80Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + mat + " , ¼öÇÐ µî±Þ (B)");
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 89~80ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + mat + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (B)");
 							} else if (mat >= 70) {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ 79~70Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + mat + " , ¼öÇÐ µî±Þ (C)");
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 79~70ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + mat + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (C)");
 							} else if (mat >= 60) {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ 69~60Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + mat + " , ¼öÇÐ µî±Þ (D)");
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 69~60ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½Ô´Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + mat + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (D)");
 							} else {
-								System.out.println("ÀÔ·ÂÇÏ½Å Á¡¼ö°¡ ³·¾Æ µî±ÞÀÌ F·Î °áÁ¤µÇ¾ú½À´Ï´Ù.");
-								System.out.println("Á¡¼ö : " + mat + " , ¼öÇÐ µî±Þ (F)");
-							} // ¼öÇÐ Á¡¼ö °á°ú Á¤»ó Ãâ·Â
+								System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ Fï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + mat + " , ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ (F)");
+							} // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 						} else {
-							System.out.println("¿À·ù ¹ß»ý. ÀÔ·Â°ªÀ» È®ÀÎÇØ ÁÖ¼¼¿ä.");
-							System.out.println("ÇöÀç ÀÔ·Â°ªÀº " + mat + " ÀÔ´Ï´Ù.");
-						} // ¿À·ù°ªÀÌ ÀÔ·ÂµÇ¾úÀ» ¶§ÀÇ Ãâ·Â¹®		
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½. ï¿½Ô·Â°ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½.");
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â°ï¿½ï¿½ï¿½ " + mat + " ï¿½Ô´Ï´ï¿½.");
+						} // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ÂµÇ¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¹ï¿½		
 
 					break;
-					// ¼ºÀû µî·Ï ¸Þ´º Á¾·á
+					// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ï¿½
 					
-					// ¼ºÀû º¸±â ¸Þ´º ½ÃÀÛ
+					// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ï¿½
 					case 2 :
-						System.out.println("¼ºÀû º¸±â ¸Þ´º·Î ÀÌµ¿ÇÕ´Ï´Ù.");
-						System.out.println("¼ºÀû Á¶È¸ÇÒ ÇÐ»ýÀÇ ÀÌ¸§À» ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½Õ´Ï´ï¿½.");
+						System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ï¿½ï¿½ ï¿½Ð»ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 						System.out.print(">>> ");
 						String studentName1 = input.next();
-						if (studentName1.equals(sName1)) { // µî·ÏµÇ¾îÀÖ´Â ÇÐ»ý Á¤º¸ Ãâ·Â
-							System.out.println(sName1 + " ´ÔÀÇ ¼ºÀûÀ» Á¶È¸ÇÕ´Ï´Ù.");
+						if (studentName1.equals(sName1)) { // ï¿½ï¿½ÏµÇ¾ï¿½ï¿½Ö´ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+							System.out.println(sName1 + " ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ï¿½Õ´Ï´ï¿½.");
 							if (s1eng > 0 && s1eng <= 100) {
-								System.out.println("±¹¾î : " + s1kor);
-								System.out.println("¿µ¾î : " + s1eng);
-								System.out.println("¼öÇÐ : " + s1mat);
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + s1kor);
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + s1eng);
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + s1mat);
 							} else {
-								System.out.println("¿À·ù ¹ß»ý. ¼ºÀûÀ» Á¤Á¤ÇØ¾ß ÇÕ´Ï´Ù.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ ï¿½Õ´Ï´ï¿½.");
 							}
-						} else if (studentName1.equals(sName2)){ // µî·ÏµÇ¾îÀÖ´Â ÇÐ»ý Á¤º¸ Ãâ·Â
-							System.out.println(sName2 + " ´ÔÀÇ ¼ºÀûÀ» Á¶È¸ÇÕ´Ï´Ù.");
+						} else if (studentName1.equals(sName2)){ // ï¿½ï¿½ÏµÇ¾ï¿½ï¿½Ö´ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+							System.out.println(sName2 + " ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ï¿½Õ´Ï´ï¿½.");
 							if (s2eng > 0 && s2eng <= 100) {
-								System.out.println("±¹¾î : " + s2kor);
-								System.out.println("¿µ¾î : " + s2eng);
-								System.out.println("¼öÇÐ : " + s2mat);
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + s2kor);
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + s2eng);
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + s2mat);
 							} else {
-								System.out.println("¿À·ù ¹ß»ý. ¼ºÀûÀ» Á¤Á¤ÇØ¾ß ÇÕ´Ï´Ù.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ ï¿½Õ´Ï´ï¿½.");
 							}
 						} else {
-							System.out.println("µî·ÏµÈ Á¤º¸°¡ ¾ø½À´Ï´Ù.");
+							System.out.println("ï¿½ï¿½Ïµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 						}
 					break;
-					// ¼ºÀû º¸±â ¸Þ´º Á¾·á
+					// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½ï¿½
 					
-					// ¼ºÀû Æò±Õ °è»ê ½ÃÀÛ
+					// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					case 3 :
-						System.out.println("¼ºÀû Æò±Õ °è»ê ¸Þ´º·Î ÀÌµ¿ÇÕ´Ï´Ù.");
-						System.out.println("¼ºÀû Æò±ÕÀ» °è»êÇÒ ÇÐ»ýÀÇ ÀÌ¸§À» ÀÛ¼ºÇÏ¼¼¿ä.");
+						System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½Õ´Ï´ï¿½.");
+						System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 						System.out.print(">>> ");
 						String studentName2 = input.next();
 							
 					if (studentName2.equals(sName1)) {
-							System.out.println(sName1 + " ´ÔÀÇ ¼ºÀûÀ» Á¶È¸ÇÕ´Ï´Ù.");
+							System.out.println(sName1 + " ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ï¿½Õ´Ï´ï¿½.");
 							if (s1eng > 0 && s1eng <= 100) {
-								System.out.println("±¹¾î : " + s1kor);
-								System.out.println("¿µ¾î : " + s1eng);
-								System.out.println("¼öÇÐ : " + s1mat);
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + s1kor);
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + s1eng);
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + s1mat);
 							
 							int total1 = s1kor + s1eng + s1mat;
 							double avg1 = total1/3;
-							System.out.println(sName1 + "´ÔÀÇ Æò±ÕÀº " + avg1 + "ÀÔ´Ï´Ù.");
+							System.out.println(sName1 + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ " + avg1 + "ï¿½Ô´Ï´ï¿½.");
 							} else {
-								System.out.println("¿À·ù ¹ß»ý. Á¡¼ö Á¤Á¤ÀÌ ÇÊ¿äÇÕ´Ï´Ù.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½Õ´Ï´ï¿½.");
 							}
 					} else if (studentName2.equals(sName2)) {
-						System.out.println(sName2 + " ´ÔÀÇ ¼ºÀûÀ» Á¶È¸ÇÕ´Ï´Ù.");
+						System.out.println(sName2 + " ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸ï¿½Õ´Ï´ï¿½.");
 						if (s2eng > 0 && s2eng <= 100) {
-							System.out.println("±¹¾î : " + s2kor);
-							System.out.println("¿µ¾î : " + s2eng);
-							System.out.println("¼öÇÐ : " + s2mat);
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + s2kor);
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + s2eng);
+							System.out.println("ï¿½ï¿½ï¿½ï¿½ : " + s2mat);
 							
 							int total2 = s2kor + s2eng + s2mat;
 							double avg2 = total2/3;
-							System.out.println(sName2 + "´ÔÀÇ Æò±ÕÀº " + avg2 + "ÀÔ´Ï´Ù.");
+							System.out.println(sName2 + "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ " + avg2 + "ï¿½Ô´Ï´ï¿½.");
 							} else {
-								System.out.println("¿À·ù ¹ß»ý. Á¡¼ö Á¤Á¤ÀÌ ÇÊ¿äÇÕ´Ï´Ù.");
+								System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½Õ´Ï´ï¿½.");
 							}
 					} else {
-						System.out.println("µî·ÏµÈ Á¤º¸°¡ ¾ø½À´Ï´Ù.");
+						System.out.println("ï¿½ï¿½Ïµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 					}
 					break;
-					// ¼ºÀû Æò±Õ °è»ê Á¾·á
+					// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					
 					
-					} // ¼ºÀû °ü¸® switch Á¾
+					} // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ switch ï¿½ï¿½
 					break;
 				
 				case 'Z' :
 				case 'z' :
-					System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+					System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 					break;
-				
-				default :
-					System.out.println("¸Þ´º¿¡ ¾ø´Â ¹®ÀÚ¸¦ ÀÛ¼ºÇÏ¼Ì½À´Ï´Ù.");
-					System.out.println("ÇÁ·Î±×·¥À» ´Ù½Ã ½ÇÇàÇØÁÖ¼¼¿ä.");
-					break;
+			
 					
-				} // ½ºÀ§Ä¡¹® Á¾·á
-				
-				
-				
-				
-				
-				
+				} // ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-			}
+}
 
-		}
+}

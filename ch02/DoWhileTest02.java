@@ -12,7 +12,7 @@ public class DoWhileTest02 {
 		 * 사용자의 숫자와 컴퓨터의 랜덤숫자가 일치하면 프로그램 종료와 함께 당첨 사실을 알린다.
 		 * 3번 안에  성공 시 상품 증정용 코드 추가*/
 		
-		int answer = (int)(Math.random()*50)+1;
+		int answer = (int)(Math.random()*100)+1;
 		// 컴퓨터가 랜덤 숫자를 생성한다 (1~50)
 		
 		Scanner input = new Scanner(System.in); 
@@ -32,7 +32,7 @@ public class DoWhileTest02 {
 		
 		
 		do { //do 시작
-			System.out.println("1부터 50 사이의 숫자를 입력하세요.");
+			System.out.println("1부터 100 사이의 숫자를 입력하세요.");
 			System.out.print(">>> ");
 			question = input.nextInt();
 			// 사용자가 숫자를 키보드로 입력한다.

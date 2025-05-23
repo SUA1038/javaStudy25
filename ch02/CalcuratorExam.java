@@ -18,7 +18,7 @@ public class CalcuratorExam {
 	
 	
 	static int minus(int x1, int x3) {
-		int x4 =0;
+		int x4 = 0;
 		x4 = x1 - x3;
 		return x4;		
 	} // minus M end
@@ -31,7 +31,7 @@ public class CalcuratorExam {
 	} // times M end
 	
 	static int divide(int x1, int x3) {
-		int x4 =0;
+		int x4 = 0;
 		x4 = x1 / x3;
 		return x4;
 	} // divide M end
@@ -72,7 +72,7 @@ public class CalcuratorExam {
 				break;
 				
 			case 4 :
-				x4 = divide(x1, x3); y1 = "+";
+				x4 = divide(x1, x3); y1 = "/";
 				break;
 				
 				// default는 생략
@@ -81,9 +81,9 @@ public class CalcuratorExam {
 			System.out.println("계산 결과 : " + x1 + " " + y1 + " "+ x3 + " = " + x4);
 			while(run2) { // while(run2)
 				if (x4 != 0) {
-					System.out.print("1. 종료하기 \n2.다시하기\n3.이어서 계산하기\n >>> ");
+					System.out.print("1. 종료하기 \n2. 다시하기\n3. 이어서 계산하기\n >>> ");
 				} else {
-					System.out.println("1. 종료하기\n2.다시하기=n >>> ");
+					System.out.println("1. 종료하기\n2. 다시하기=n >>> ");
 				}
 				
 				x5 = scInt.nextInt();
@@ -98,7 +98,7 @@ public class CalcuratorExam {
 				case 3 :
 					x1 = x4;
 					x2 = 0;
-					x3 = 3;
+					x3 = 0;
 					run2 = false;
 					break;
 					
