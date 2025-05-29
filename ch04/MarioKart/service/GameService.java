@@ -13,7 +13,7 @@ public class GameService {
     public static void menu(Scanner input, CharacterDTO[] characterDTOs, CartDTO[] cartDTOs, MemberDTO[] memberDTOs, MemberDTO loginState) {
 
       
-        if (loginState == null || loginState.characterDTO == null || loginState.cartDTO == null) {
+        if (loginState == null || loginState.getCharacterDTO() == null || loginState.getCartDTO() == null) {
             System.out.println("로그인 후 캐릭터와 카트를 선택해주세요.");
             
         }
@@ -23,7 +23,7 @@ public class GameService {
         
 
         // 유저 점수 계산
-        double playerScore = calculateScore1(loginState.characterDTO, loginState.cartDTO);
+        double playerScore = calculateScore1(loginState.getCharacterDTO(), loginState.getCartDTO());
         double botScore = calculateScore2(characterDTOs, cartDTOs);
     
         
@@ -54,22 +54,22 @@ public class GameService {
         CharacterDTO character = characterDTOs[charIndex];
         CartDTO cart = cartDTOs[cartIndex];
 
-        return character.speed + character.handling + (character.acceleration * character.weight)
-             + cart.cartSpeed + (cart.acceleration * cart.cartWeight);
+        return character.getSpeed() + character.getHandling() + (character.getAcceleration() * character.getWeight())
+             + cart.getCartSpeed() + (cart.getAcceleration() * cart.getAcceleration());
 	}
 
 	
 	
 	// 나의 점수 계산
 	static double calculateScore1(CharacterDTO characterDTOs, CartDTO cartDTOs) {
-		double playerScore = characterDTOs.speed + characterDTOs.handling + (characterDTOs.acceleration * characterDTOs.weight)
-				+ cartDTOs.cartSpeed + (cartDTOs.acceleration * cartDTOs.cartWeight);
+		double playerScore = characterDTOs.getSpeed() + characterDTOs.getHandling() + (characterDTOs.getAcceleration() * characterDTOs.getWeight())
+				+ cartDTOs.getCartSpeed() + (cartDTOs.getAcceleration() * cartDTOs.getCartWeight());
 		// 점수 = 캐릭터 속도 + 핸들링 수치 + (가속도 * 무게)
 		//		+ 카트 속도 + (카트 가속도 * 카트 무게)
 		// 를 계산하여 점수가 더 높은 쪽이 우승
 		
 		
-		return characterDTOs.speed + characterDTOs.handling + (characterDTOs.acceleration * characterDTOs.weight);
+		return characterDTOs.getSpeed() + characterDTOs.getHandling() + (characterDTOs.getAcceleration() * characterDTOs.getWeight());
 	}
 	
 }

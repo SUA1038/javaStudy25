@@ -55,7 +55,7 @@ public class CartService {
 		
 		for(int i=0; i<characterDTOs.length; i++) {
 			if(characterDTOs[i] !=null) {
-				System.out.println(" 이름 : " + characterDTOs[i].name + " | 무게 : " + characterDTOs[i].weight);
+				System.out.println(" 이름 : " + characterDTOs[i].getName() + " | 무게 : " + characterDTOs[i].getWeight());
 			} // if문 종료
 		} // for문 종료
 		
@@ -64,12 +64,12 @@ public class CartService {
 		String selectChar = input.next();
 		
 		for(int i=0; i<characterDTOs.length; i++) {
-			if(characterDTOs[i] !=null && selectChar.equals(characterDTOs[i].name)) {
-				loginState.characterDTO = characterDTOs[i]; 
+			if(characterDTOs[i] !=null && selectChar.equals(characterDTOs[i].getName())) {
+				loginState.setCharacterDTO(characterDTOs[i]); 
 			}
 		} // for문 종료
 		
-		System.out.println(loginState.nickName + "님은 " + loginState.characterDTO.name + "(을)를 선택했습니다.");
+		System.out.println(loginState.getNickName() + "님은 " + loginState.getCharacterDTO().getName() + "(을)를 선택했습니다.");
 		return loginState;
 		
 
@@ -82,10 +82,10 @@ public class CartService {
 			
 			for (int i = 0; i < cartDTOs.length; i++) {
 				if (cartDTOs[i] != null) {
-					System.out.println("카트명 : " + cartDTOs[i].cartName 
-						+ " | 무게 : " + cartDTOs[i].cartWeight 
-						+ " | 색상 : " + cartDTOs[i].cartColor 
-						+ " | 속도 : " + cartDTOs[i].cartSpeed + "\n");
+					System.out.println("카트명 : " + cartDTOs[i].getCartName() 
+						+ " | 무게 : " + cartDTOs[i].getCartWeight()
+						+ " | 색상 : " + cartDTOs[i].getCartColor()
+						+ " | 속도 : " + cartDTOs[i].getCartSpeed());
 				} // if문 종료
 			} // for문 종료
 			
@@ -94,12 +94,13 @@ public class CartService {
 			String selectCart = input.next();
 			
 			for(int i=0; i<cartDTOs.length; i++) {
-				if(cartDTOs[i] !=null && selectCart.equals(cartDTOs[i].cartName)) {
-					loginState.cartDTO = cartDTOs[i]; 	 
+				if(cartDTOs[i] !=null && selectCart.equals(cartDTOs[i].getCartName())) {
+					loginState.setCartDTO(cartDTOs[i]); 	 
 				}
 			} // for문 종료
 			
-			System.out.println("(" + loginState.characterDTO.name + ")" + loginState.nickName + "님은 " + loginState.cartDTO.cartName + "(을)를 선택했습니다.");
+			System.out.println("(" + loginState.getCharacterDTO().getName() + ")" + loginState.getNickName() + "님은 " 
+			+ loginState.getCartDTO().getCartName() + "(을)를 선택했습니다.");
 			return loginState;
 		} // cartMenu 종료
 	// cartMenu 종료 ============================================================================================

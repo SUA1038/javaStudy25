@@ -64,10 +64,10 @@ public class MemberService {
 			System.out.println("로그인이 필요한 서비스입니다.");
 		} else {
 			System.out.println("================================");
-			System.out.println("내 ID : " + loginState.id);
-			System.out.println("내 PW : " + loginState.pw);
-			System.out.println("내 닉네임 : " + loginState.nickName);
-			System.out.println("내 이메일 : " + loginState.email);
+			System.out.println("내 ID : " + loginState.getId());
+			System.out.println("내 PW : " + loginState.getPw());
+			System.out.println("내 닉네임 : " + loginState.getNickName());
+			System.out.println("내 이메일 : " + loginState.getEmail());
 			System.out.println("================================");	
 		}
 
@@ -81,26 +81,26 @@ public class MemberService {
 		MemberDTO memberDTO = new MemberDTO();
 		System.out.println("사용할 ID를 입력해주세요.");
 		System.out.print(">>> ");
-		memberDTO.id = input.next();
+		memberDTO.setId(input.next());
 
 		System.out.println("사용할 PW를 입력해주세요.");
 		System.out.print(">>> ");
-		memberDTO.pw = input.next();
+		memberDTO.setPw(input.next());
 
 		System.out.println("사용할 닉네임을 입력해주세요.");
 		System.out.print(">>> ");
-		memberDTO.nickName = input.next();
+		memberDTO.setNickName(input.next());
 
 		System.out.println("사용할 이메일을 입력해주세요.");
 		System.out.print(">>> ");
-		memberDTO.email = input.next();
+		memberDTO.setEmail(input.next());
 
 		for (int i = 0; i < memberDTOs.length; i++) {
 			if (memberDTOs[i] == null) {
 				memberDTOs[i] = memberDTO;
 			} // if문 종료
 		} // for문 종료
-		System.out.println(memberDTO.nickName + "님, 회원가입이 완료되었습니다.");
+		System.out.println(memberDTO.getNickName() + "님, 회원가입이 완료되었습니다.");
 	} // create 종료
 // 계정 생성 create ===========================================================
 
@@ -110,15 +110,15 @@ public class MemberService {
 		System.out.println("로그인할 ID를 입력해주세요.");
 		MemberDTO loginMember = new MemberDTO();
 		System.out.print(">>> ");
-		loginMember.id = input.next();
+		loginMember.setId(input.next());
 
 		System.out.println("로그인할 PW를 입력해주세요.");
 		System.out.print(">>> ");
-		loginMember.pw = input.next();
+		loginMember.setPw(input.next());
 
 		for (int i = 0; i < memberDTOs.length; i++) {
-			if (memberDTOs[i] != null && memberDTOs[i].id.equals(loginMember.id)
-					&& memberDTOs[i].pw.equals(loginMember.pw)) {
+			if (memberDTOs[i] != null && memberDTOs[i].getId().equals(loginMember.getId())
+					&& memberDTOs[i].getPw().equals(loginMember.getPw())) {
 				System.out.println("ID & PW 일치 확인.");
 
 				loginState = memberDTOs[i];
@@ -128,7 +128,7 @@ public class MemberService {
 			}
 
 		} // for문 종료
-		System.out.println(loginState.nickName + "님, 로그인에 성공하셨습니다.");
+		System.out.println(loginState.getNickName() + "님, 로그인에 성공하셨습니다.");
 
 		return loginState;
 	} // login 종료
@@ -139,18 +139,18 @@ public class MemberService {
 		MemberDTO modifyMember = new MemberDTO();
 		System.out.println("ID를 입력하세요.");
 		System.out.print(">>> ");
-		modifyMember.id = input.next();
+		modifyMember.setId(input.next());
 		System.out.println("PW를 입력하세요.");
 		System.out.print(">>> ");
-		modifyMember.pw = input.next();
+		modifyMember.setPw(input.next());
 
-		if (loginState.id.equals(modifyMember.id) && loginState.pw.equals(modifyMember.pw)) {
+		if (loginState.getId().equals(modifyMember.getId()) && loginState.getPw().equals(modifyMember.getPw())) {
 			System.out.println("새 PW를 입력하세요.");
 			System.out.print(">>> ");
-			loginState.pw = input.next();
+			loginState.setPw(input.next());
 			System.out.println("새 닉네임을 입력하세요.");
 			System.out.print(">>> ");
-			loginState.nickName = input.next();
+			loginState.setNickName(input.next());
 		} // if문 종료
 	} // modify 종료
 // 회원 정보 수정 ==============================================================
@@ -160,21 +160,21 @@ public class MemberService {
 		MemberDTO deleteMember = new MemberDTO();
 		System.out.println("삭제할 계정의 ID를 입력하세요.");
 		System.out.print(">>> ");
-		deleteMember.id = input.next();
+		deleteMember.setId(input.next());
 		System.out.println("삭제할 계정의 PW를 입력하세요.");
 		System.out.print(">>> ");
-		deleteMember.pw = input.next();
+		deleteMember.setPw(input.next());
 
 		for (int i = 0; i < memberDTOs.length; i++)
-			if (memberDTOs[i] != null && memberDTOs[i].id.equals(deleteMember.id)
-					&& memberDTOs[i].pw.equals(deleteMember.pw)) {
+			if (memberDTOs[i] != null && memberDTOs[i].getId().equals(deleteMember.getId())
+					&& memberDTOs[i].getPw().equals(deleteMember.getPw())) {
 
 				memberDTOs[i] = null;
 
-				loginState.id = null;
-				loginState.pw = null;
-				loginState.nickName = null;
-				loginState.email = null;
+				loginState.setId(null);
+				loginState.setPw(null);
+				loginState.setNickName(null);
+				loginState.setEmail(null);
 
 				System.out.println("회원 탈퇴가 완료되었습니다.");
 
