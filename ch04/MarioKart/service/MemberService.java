@@ -125,6 +125,7 @@ public class MemberService {
 			} else {
 				System.out.println("ID 혹은 PW가 일치하지 않습니다.");
 				subrun = false;
+				break;
 			}
 
 		} // for문 종료
